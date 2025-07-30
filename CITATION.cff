@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this system or refer to these papers, please cite as follows:"
+...
+
+license: CC-BY-NC-ND-4.0
+abstract: >
+cff-version: 1.2.0
+message: "If you use this system or refer to these papers, please cite as follows:"
+title: "Visual Thinking Lens: A Recursive Framework for AI Image Critique"
+authors:
+  - family-names: Parrish
+    given-names: Russell
+    orcid: https://orcid.org/0000-0000-0000-0000  # ← Replace with actual if available
+date-released: 2025-08-01
+version: "v0.1"
+url: https://github.com/yourusername/visual-thinking-lens
+doi: 10.5281/zenodo.XXXXXXX  # ← Replace once uploaded to Zenodo or leave blank for now
+license: CC-BY-NC-ND-4.0
+abstract: >
+  Visual Thinking Lens (VTL) is a recursive critique system developed inside GPT-4 to interrogate AI-generated imagery not for polish, but for structural consequence. It evaluates compositional strain, symbolic recursion, and prompt collapse behavior to reveal how generative models fail, correct, and reinterpret visual logic under constraint. This repository includes case studies, critical frameworks, and supporting artifacts. It does not release the core engine.
