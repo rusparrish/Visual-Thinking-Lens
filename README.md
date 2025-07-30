@@ -56,7 +56,7 @@ Watermarked research artifacts demonstrating recursive critique under constraint
 - **Recursive Prompt Design** – When critique becomes compositional architecture. [PDF](cases/case-recursive-prompt-design.pdf)
 - **Constraint Gravity (Thirty Figures)** – Machine restraint under long-run constraint testing. [PDF](cases/case-constraint-gravity-thirty-figures.pdf)
 - **Soft Collapse** – Rebuilding structure through recursive pressure. [PDF](cases/case-soft-collapse.pdf)
-- **Concert Score** – Single-image walkthrough under full Lens scoring pressure. [PDF](cases/case-concert-score.pdf)
+- **Concert Score** – Single-image walkthrough under full Lens scoring pressure. [PDF](cases/concert-score-walkthrough.pdf)
 
 ---
 
