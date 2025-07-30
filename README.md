@@ -32,14 +32,14 @@ VTL is designed to make collapse visible—not corrected or hidden.
 
 Watermarked, read-only whitepapers and conceptual briefs outlining the framework:
 
-- **Artist's Lens (Brief Explanation)** – Poise, restraint, and delay as structural forces. [PDF](docs/artist-lens-brief-explanation.pdf)
-- **How Models Fake Seeing** – Diagnosing simulated vision in generative systems. [PDF](docs/how-models-fake-seeing.pdf)
 - **Visual Thinking Lens Stack** – Overview of recursive architecture for image reasoning. [PDF](docs/visual-thinking-lens-stack.pdf)
+- **Artist's Lens (Brief Explanation)** – Poise, restraint, and delay as structural forces. [PDF](docs/artist-lens-brief-explanation.pdf)
+- **Introduction: Sketcher Lens** – Philosophy of the structural critique engine (no internals disclosed). [PDF](docs/introduction-sketcher-lens.pdf)
+- **How Models Fake Seeing** – Diagnosing simulated vision in generative systems. [PDF](docs/how-models-fake-seeing.pdf)
 - **Visual Systems at the Edge of Contradiction** – Materializing tension and refusal. [PDF](docs/visual-systems-at-the-edge-of-contradiction.pdf)
 - **Working Theory** – Structural consequence as a measure of visual intelligence. [PDF](docs/visual-thinking-lens-working-theory.pdf)
 - **Constraint Layer & Logic Tags** – How structured prompts behave differently from descriptive ones. [PDF](docs/constraint-layer-and-logic-tags.pdf)
 - **Prompting Against Collapse (Dialectic Structures)** – Principles for tension-driven prompting. [PDF](docs/prompting-against-collapse-dialectic-structures.pdf)
-- **Introduction: Sketcher Lens** – Philosophy of the structural critique engine (no internals disclosed). [PDF](docs/introduction-sketcher-lens.pdf)
 - **Concept Note: Volumetric Container of Force** – A validator concept for visual strain detection. [PDF](docs/concept-note-volumetric-container-of-force.pdf)
 - **Recursive Intelligence Under Constraint** – Canonical artifact showing collapse as structure. [PDF](docs/recursive-intelligence-under-constraint.pdf)
 
