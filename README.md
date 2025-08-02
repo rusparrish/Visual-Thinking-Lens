@@ -65,6 +65,8 @@ Watermarked research artifacts demonstrating recursive critique under constraint
 - **Soft Collapse** – Rebuilding structure through recursive pressure. [PDF](cases/case-soft-collapse.pdf)
 - **Concert Score** – Single-image walkthrough under full Lens scoring pressure. [PDF](cases/case-concert-score.pdf)
 
+### 🧪 Examples (`/examples`)
+
 Library of before/after images: https://www.artistinfluencer.com/library
 
 Instead of “stacking synonyms,” the Lens redistributes conceptual gravity, pulling apart overused clusters and encouraging underrepresented variants to emerge. It is a Visual Collapse Lens, recursive prompt engine and aesthetic failure lab rolled into one.
