@@ -5,7 +5,7 @@
 
 ## Overview
 
-The **Visual Thinking Lens (VTL)** is a language-native framework built inside GPT-4 to interrogate images **not by style, but by structure**. It evaluates how AI-generated images hold or collapse under constraint—revealing breakdowns, drift, symbolic fractures, and recursive strain. Don’t just make images. Interrogate them and then remake them into images that speak. Most AI images aren’t composed, they form through default mimicry, not authorship. 
+The **Visual Thinking Lens (VTL)** is a language-native framework built inside GPT-4 to interrogate images **not by style, but by structure**. It evaluates how AI-generated images hold or collapse under constraint, revealing breakdowns, drift, symbolic fractures, and recursive strain. Don’t just make images. Interrogate them and then remake them into images that speak. Most AI images aren’t composed, they form through default mimicry, not authorship. 
 
 This is not a toolkit. It is a **lens**:  
 a reasoning engine that turns glitch into architecture, and failure into consequence. A set of tools that apply pressure to the underlying structure of diffusion, prompting, composition and remaking of almost any type of images (real or AI). It is a:
