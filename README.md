@@ -42,6 +42,8 @@ Watermarked, read-only whitepapers and conceptual briefs outlining the framework
 - **Prompting Against Collapse (Dialectic Structures)** – Principles for tension-driven prompting. [PDF](docs/prompting-against-collapse-dialectic-structures.pdf)
 - **Concept Note: Volumetric Container of Force** – A validator concept for visual strain detection. [PDF](docs/concept-note-volumetric-container-of-force.pdf)
 - **Recursive Intelligence Under Constraint** – Canonical artifact showing collapse as structure. [PDF](docs/recursive-intelligence-under-constraint.pdf)
+- **Bending the Tokens: Structural Pressure for AI Imagery** - Deconstructing generative images to reshape underlying architecture. [PDF](docs/Bending_the_Tokens.pdf)
+
 
 ---
 
