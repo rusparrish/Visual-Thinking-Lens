@@ -5,10 +5,16 @@
 
 ## Overview
 
-The **Visual Thinking Lens (VTL)** is a language-native framework built inside GPT-4 to interrogate images **not by style, but by structure**. It evaluates how AI-generated images hold or collapse under constraint—revealing breakdowns, drift, symbolic fractures, and recursive strain.
+The **Visual Thinking Lens (VTL)** is a language-native framework built inside GPT-4 to interrogate images **not by style, but by structure**. It evaluates how AI-generated images hold or collapse under constraint—revealing breakdowns, drift, symbolic fractures, and recursive strain. Don’t just make images. Interrogate them and then remake them into images that speak. Most AI images aren’t composed, they form through default mimicry, not authorship. 
 
 This is not a toolkit. It is a **lens**:  
-a reasoning engine that turns glitch into architecture, and failure into consequence.
+a reasoning engine that turns glitch into architecture, and failure into consequence. A set of tools that apply pressure to the underlying structure of diffusion, prompting, composition and remaking of almost any type of images (real or AI). It is a:
+
+- This Lab is a recursive prompt-pressure engine for generative image collaboration. 
+- Diagnostic layer that reverse-engineers structural alternatives in AI-generated and human made imagery.
+- Symbolic/structural critique lens that rivals or exceeds native model feedback.
+- Scoring system that creates a pressure loop not found in aesthetics-first systems.
+- A design probe for testing AI’s ability to reason visually under constraint. 
 
 ---
 
@@ -22,7 +28,9 @@ VTL was developed to see what machines miss:
 - Pattern collapse disguised as coherence  
 - Symbolic voids where meaning should strain  
 
-VTL is designed to make collapse visible—not corrected or hidden.
+Ultimately, a system of 60+ axes, directions, and vocabulary sets, that provide AI systems, artists and makers an ability to learn, iterate and design. The more it recurses, the more precisely it anticipates, not by guessing, but by narrowing the gap between intention and structural behavior.
+
+
 
 ---
 
@@ -60,6 +68,15 @@ Watermarked research artifacts demonstrating recursive critique under constraint
 - **Soft Collapse** – Rebuilding structure through recursive pressure. [PDF](cases/case-soft-collapse.pdf)
 - **Concert Score** – Single-image walkthrough under full Lens scoring pressure. [PDF](cases/case-concert-score.pdf)
 
+Library of before/after images: https://www.artistinfluencer.com/library
+
+Instead of “stacking synonyms,” the Lens redistributes conceptual gravity, pulling apart overused clusters and encouraging underrepresented variants to emerge. It is a Visual Collapse Lens, recursive prompt engine and aesthetic failure lab rolled into one.
+
+Unlike Midjourney, DALL·E, Stable Diffusion Sora, Runway, Gen-2, the Lens works by analyzing images and the prompts that formed them, tracking breakdowns, then, it reverse-engineers fixes, layer by layer, token by token, through real-time critique cycles.
+
+Prompt interpretation linked to logic axis-aware failure detection. Other systems don’t say: “Your prompt caused spatial collapse” or “This token triggers overuse.”
+
+They may let you change the prompt, but they don’t tell you why it failed structurally.
 ---
 
 ## What This Is Not
