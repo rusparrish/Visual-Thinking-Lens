@@ -67,7 +67,7 @@ Watermarked research artifacts demonstrating recursive critique under constraint
 
 ### 🧪 Examples (`/examples`)
 
-Library of before/after images: https://www.artistinfluencer.com/library
+Library of before/after images in examples folder and at: https://www.artistinfluencer.com/library
 
 Instead of “stacking synonyms,” the Lens redistributes conceptual gravity, pulling apart overused clusters and encouraging underrepresented variants to emerge. It is a Visual Collapse Lens, recursive prompt engine and aesthetic failure lab rolled into one.
 
