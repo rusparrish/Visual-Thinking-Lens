@@ -9,7 +9,7 @@ The **Visual Thinking Lens (VTL)** is a language-native framework built inside G
 
 This is not a toolkit. It is a **lens**: a reasoning engine that turns glitch into architecture, and failure into consequence. A set of tools that apply pressure to the underlying structure of diffusion, prompting, composition and remaking of almost any type of images (real or AI). It is a:
 
-- This Lab is a recursive prompt-pressure engine for generative image collaboration. 
+- Recursive prompt-pressure engine for generative image collaboration. 
 - Diagnostic layer that reverse-engineers structural alternatives in AI-generated and human made imagery.
 - Symbolic/structural critique lens that rivals or exceeds native model feedback.
 - Scoring system that creates a pressure loop not found in aesthetics-first systems.
@@ -28,8 +28,6 @@ VTL was developed to see what machines miss:
 - Symbolic voids where meaning should strain  
 
 Ultimately, a system of 60+ axes, directions, and vocabulary sets, that provide AI systems, artists and makers an ability to learn, iterate and design. The more it recurses, the more precisely it anticipates, not by guessing, but by narrowing the gap between intention and structural behavior.
-
-
 
 ---
 
