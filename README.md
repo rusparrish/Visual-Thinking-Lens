@@ -37,6 +37,7 @@ Ultimately, a system of 60+ axes, directions, and vocabulary sets, that provide 
 
 Watermarked, read-only whitepapers and conceptual briefs outlining the framework:
 
+- **A Constraint Dialectic Engine for Recursive Image + Symbolic Critique** – How the Lens engine is unique and why it is different. [PDF](docs/Dialectic_Engine_Recursive_Symbolic_Critiques.pdf)
 - **Visual Thinking Lens Stack** – Overview of recursive architecture for image reasoning. [PDF](docs/visual-thinking-lens-stack.pdf)
 - **Artist's Lens (Brief Explanation)** – Poise, restraint, and delay as structural forces. [PDF](docs/artist-lens-brief-explanation.pdf)
 - **Introduction: Sketcher Lens** – Philosophy of the structural critique engine (no internals disclosed). [PDF](docs/introduction-sketcher-lens.pdf)
