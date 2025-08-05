@@ -41,6 +41,7 @@ Watermarked, read-only whitepapers and conceptual briefs outlining the framework
 - **Artist's Lens (Brief Explanation)** – Poise, restraint, and delay as structural forces. [PDF](docs/artist-lens-brief-explanation.pdf)
 - **Introduction: Sketcher Lens** – Philosophy of the structural critique engine (no internals disclosed). [PDF](docs/introduction-sketcher-lens.pdf)
 - **How Models Fake Seeing** – Diagnosing simulated vision in generative systems. [PDF](docs/how-models-fake-seeing.pdf)
+- **Whisperer Walk: Recursive Compression into Spatial Realization** – AI image study showing symbolic recursion under structured visual critique. [PDF](docs/Recursive-Compression-Spatial-Realization.pdf)
 - **Visual Systems at the Edge of Contradiction** – Materializing tension and refusal. [PDF](docs/visual-systems-at-the-edge-of-contradiction.pdf)
 - **Working Theory** – Structural consequence as a measure of visual intelligence. [PDF](docs/visual-thinking-lens-working-theory.pdf)
 - **Constraint Layer & Logic Tags** – How structured prompts behave differently from descriptive ones. [PDF](docs/constraint-layer-and-logic-tags.pdf)
