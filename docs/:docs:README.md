@@ -1,12 +1,12 @@
 # Documentation 
 **Visual Thinking Lens\**
-\
+
 This folder contains **conceptual briefs, whitepapers, and interpretive notes** for the Visual Thinking Lens (VTL).  \
 All documents are **watermarked, read-only**, and published for research reference only.\
-\
+
 ## 
 Included Documents\
-\
+
 - **A Constraint Dialectic Engine for Recursive Image + Symbolic Critique** \How the Lens engine is unique and why it is different. [PDF](Dialectic_Engine_Recursive_Symbolic_Critiques)\
 - **Visual Thinking Lens Stack** \ Overview of the recursive cognitive architecture powering VTL. [PDF](visual-thinking-lens-stack.pdf)\
 - **Introduction: Sketcher Lens** \ Conceptual framing of the structural critique engine (no scoring or axis details disclosed). [PDF](introduction-sketcher-lens.pdf)\
@@ -21,11 +21,28 @@ Included Documents\
 - **Concept Note: Volumetric Container of Force (VCF)** \ A validator concept for detecting internal image strain, published at a high level. [PDF](concept-note-volumetric-container-of-force.pdf)\
 - **Recursive Intelligence Under Constraint** \ A canonical artifact showing how breakdowns become structural meaning under recursive pressure. [PDF](recursive-intelligence-under-constraint.pdf)\
 - **Bending the Tokens: Structural Pressure for AI Imagery** - Deconstructing generative images to reshape underlying architecture. [PDF](Bending_the_Tokens.pdf)
-\
----\
-\
-## License\
-\
-All documents \'a9 2025 Russell Parrish / A.rtist I.nfluencer.  \
-Published under **CC BY-NC-ND 4.0** with **no AI training, dataset scraping, or derivative use** permitted.  \
-See `/legal/` for full license terms.}
+
+---
+
+## License
+
+All content © 2025 Russell Parrish / A.rtist I.nfluencer.  
+Protected under a **CC BY-NC-ND** license.  
+No commercial use, derivative generation, or dataset scraping permitted without explicit permission.
+
+See `/legal/LICENSE.md`, `/legal/visual-assets-license.md`, and `/NOTICE.md` for full terms.
+
+---
+
+## Research Use
+
+This system was built independently inside GPT-4 as a recursive critique engine.  
+If you’re working on **LLM visual alignment, interpretability tooling, or structural image reasoning**, you can reach out via:
+
+📧 russellgparrish@gmail.com  
+🌐 [www.artistinfluencer.com](http://www.artistinfluencer.com)
+
+---
+
+**Visual Thinking Lens**  
+*Not generated. Diagnosed.*
