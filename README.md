@@ -40,7 +40,7 @@ Watermarked, read-only whitepapers and conceptual briefs outlining the framework
 - **A Constraint Dialectic Engine for Recursive Image + Symbolic Critique** – How the Lens engine is unique and why it is different. [PDF](docs/Dialectic_Engine_Recursive_Symbolic_Critiques.pdf)
 - **Visual Thinking Lens Stack** – Overview of recursive architecture for image reasoning. [PDF](docs/visual-thinking-lens-stack.pdf)
 - **Introduction: Sketcher Lens** – Philosophy of the structural critique engine (no internals disclosed). [PDF](docs/introduction-sketcher-lens.pdf)
-- **Sketcher as Scaffold: How the Lens Rewrites GPT's Reflex** - Sketcher Lens interrupts GPT’s generative reflex by applying prompt-level scaffolding that forces structural consequence into the image. [PDF](docs/Sketcher_Scaffold_The_Lens_rewrites_GPT_Reflex.pdf)
+- **Sketcher as Scaffold: How the Lens Rewrites GPT's Reflex** - Sketcher Lens interrupts GPT’s generative reflex by applying prompt-level scaffolding that forces structural consequence into the image. [PDF](docs/Sketcher_Scaffold_The_Lens_Rewrites_GPT_Reflex.pdf)
 - **Artist's Lens (Brief Explanation)** – Poise, restraint, and delay as structural forces. [PDF](docs/artist-lens-brief-explanation.pdf)
 - **How Models Fake Seeing** – Diagnosing simulated vision in generative systems. [PDF](docs/how-models-fake-seeing.pdf)
 - **Whisperer Walk: Recursive Compression into Spatial Realization** – AI image study showing symbolic recursion under structured visual critique. [PDF](docs/Recursive-Compression-Spatial-Realization.pdf)
