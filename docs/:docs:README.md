@@ -1,14 +1,11 @@
 # Documentation 
-**\Visual Thinking Lens\**
+**Visual Thinking Lens\**
 \
 This folder contains **conceptual briefs, whitepapers, and interpretive notes** for the Visual Thinking Lens (VTL).  \
 All documents are **watermarked, read-only**, and published for research reference only.\
 \
----\
-\
 ## 
-\f1 \uc0\u55357 \u56536 
-\f0  Included Documents\
+Included Documents\
 \
 - **A Constraint Dialectic Engine for Recursive Image + Symbolic Critique** \How the Lens engine is unique and why it is different. [PDF](Dialectic_Engine_Recursive_Symbolic_Critiques)\
 - **Visual Thinking Lens Stack** \ Overview of the recursive cognitive architecture powering VTL. [PDF](visual-thinking-lens-stack.pdf)\
