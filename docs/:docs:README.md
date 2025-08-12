@@ -14,6 +14,7 @@ Included Documents
 - **Artist's Lens (Brief Explanation)** \ Poise, restraint, and delay as structural forces in visual reasoning. [PDF](artist-lens-brief-explanation.pdf)
 - **Working Theory** \ A high-level theory of visual consequence as a benchmark for intelligence. [PDF](visual-thinking-lens-working-theory.pdf)
 - **How Models Fake Seeing** \ Diagnosing simulated vision in generative models and the gap between surface coherence and structural intelligence. [PDF](how-models-fake-seeing.pdf)
+- **Failure Taxonomy: Evidence for Generative Model Collapse Modes** \ Systematically categorizing evidences of failure modes in generative outputs, using the Sketcher Lens and CLIP, for diagnosing and understanding collapse patterns. [PDF](Failure-Taxonomy-Generative-Collapse-Modes)
 - **Whisperer Walk: Recursive Compression into Spatial Realization** \'96 A recursive visual study revealing how symbolic tension and spatial logic emerge across AI-generated imagery under structured critique. [PDF](Recursive-Compression-Spatial-Realization.pdf)
 - **Visual Systems at the Edge of Contradiction** \ Materializing tension and generative refusal as design tools. [PDF](visual-systems-at-the-edge-of-contradiction.pdf)
 - **Constraint Layer & Logic Tags** \ How structural prompts and tags enforce pressure over aesthetics. [PDF](constraint-layer-and-logic-tags.pdf)
