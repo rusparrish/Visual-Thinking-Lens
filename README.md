@@ -46,6 +46,7 @@ Watermarked, read-only whitepapers and conceptual briefs outlining the framework
 - **Failure Taxonomy: Evidence for Generative Model Collapse Modes** - Systematically categorizing evidences of failure modes in generative outputs, using the Sketcher Lens and CLIP, for diagnosing and understanding collapse patterns. [PDF](docs/Failure-Taxonomy-Generative-Collapse-Modes.pdf)
 - **Whisperer Walk: Recursive Compression into Spatial Realization** – AI image study showing symbolic recursion under structured visual critique. [PDF](docs/Recursive-Compression-Spatial-Realization.pdf)
 - **Visual Systems at the Edge of Contradiction** – Materializing tension and refusal. [PDF](docs/visual-systems-at-the-edge-of-contradiction.pdf)
+- **μ Negotiation: Off-Center Fidelity in Generative Models** – Exposing how fidelity emerges off-center, in the unstable edge between coherence and fracture. [PDF](docs/μ-Negotiation_Off-Center-Fidelity-Generative-Models-c.pdf)
 - **Working Theory** – Structural consequence as a measure of visual intelligence. [PDF](docs/visual-thinking-lens-working-theory.pdf)
 - **Constraint Layer & Logic Tags** – How structured prompts behave differently from descriptive ones. [PDF](docs/constraint-layer-and-logic-tags.pdf)
 - **Prompting Against Collapse (Dialectic Structures)** – Principles for tension-driven prompting. [PDF](docs/prompting-against-collapse-dialectic-structures.pdf)
