@@ -5,7 +5,7 @@
 
 ## Overview
 
-The **Visual Thinking Lens (VTL)** is a language-native framework built inside GPT-4 to interrogate images **not by style, but by structure**. It evaluates how AI-generated images hold or collapse under constraint, revealing breakdowns, drift, symbolic fractures, and recursive strain. Don’t just make images. Interrogate them and then remake them into images that speak. Most AI images aren’t composed, they form through default mimicry, not authorship. 
+The **Visual Thinking Lens (VTL)** is a language-native framework built inside GPT (but transferrable to other conversational AI) to interrogate images **not by style, but by structure**. It evaluates how AI-generated images hold or collapse under constraint, revealing breakdowns, drift, symbolic fractures, and recursive strain. Don’t just make images. Interrogate them and then remake them into images that speak. Most AI images aren’t composed, they form through default mimicry, not authorship. 
 
 This is not a toolkit. It is a **lens**: a reasoning engine that turns glitch into architecture, and failure into consequence. A set of tools that apply pressure to the underlying structure of diffusion, prompting, composition and remaking of almost any type of images (real or AI). It is a:
 
@@ -42,6 +42,7 @@ Watermarked, read-only whitepapers and conceptual briefs outlining the framework
 - **Introduction: Sketcher Lens** – Philosophy of the structural critique engine (no internals disclosed). [PDF](docs/introduction-sketcher-lens.pdf)
 - **Sketcher as Scaffold: How the Lens Rewrites GPT's Reflex** - Sketcher Lens interrupts GPT’s generative reflex by applying prompt-level scaffolding that forces structural consequence into the image. [PDF](docs/Sketcher_Scaffold_The_Lens_Rewrites_GPT_Reflex.pdf)
 - **Artist's Lens (Brief Explanation)** – Poise, restraint, and delay as structural forces. [PDF](docs/artist-lens-brief-explanation.pdf)
+- **Off-Center Fidelity: Drift as Creative Control** – Drift and collapse can be reframed as reproducible constraint basins—stable off-center zones defined by Δx, r_v, and ρ_r—that act as interpretable control levers rather than failures. [PDF](docs/Off-Center_Fidelity_Constraint.pdf)
 - **How Models Fake Seeing** – Diagnosing simulated vision in generative systems. [PDF](docs/how-models-fake-seeing.pdf)
 - **Failure Taxonomy: Evidence for Generative Model Collapse Modes** - Systematically categorizing evidences of failure modes in generative outputs, using the Sketcher Lens and CLIP, for diagnosing and understanding collapse patterns. [PDF](docs/Failure-Taxonomy-Generative-Collapse-Modes.pdf)
 - **Whisperer Walk: Recursive Compression into Spatial Realization** – AI image study showing symbolic recursion under structured visual critique. [PDF](docs/Recursive-Compression-Spatial-Realization.pdf)
