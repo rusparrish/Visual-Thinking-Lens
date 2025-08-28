@@ -1,8 +1,8 @@
 # Documentation 
 **Visual Thinking Lens**
 
-This folder contains **conceptual briefs, whitepapers, and interpretive notes** for the Visual Thinking Lens (VTL).  \
-All documents are **watermarked, read-only**, and published for research reference only.\
+This folder contains **conceptual briefs, whitepapers, and interpretive notes** for the Visual Thinking Lens (VTL).  
+All documents are **watermarked, read-only**, and published for research reference only.
 
 ## 
 Included Documents
