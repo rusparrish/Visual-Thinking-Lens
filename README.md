@@ -55,6 +55,11 @@ Watermarked, read-only whitepapers and conceptual briefs outlining the framework
 - **Recursive Intelligence Under Constraint** – Canonical artifact showing collapse as structure. [PDF](docs/recursive-intelligence-under-constraint.pdf)
 - **Bending the Tokens: Structural Pressure for AI Imagery** - Deconstructing generative images to reshape underlying architecture. [PDF](docs/Bending_the_Tokens.pdf)
 
+---
+
+### 🧪 Deformation Operator Playbook (`/Deformation_playbook`)
+
+The Deformation Operator Playbook is a practical prompting framework for intentional, repeatable figure warps that treats distortion as the body itself, guided by the flow Anchors → Select → Transforms → Constraints → Viewfinder. It offers a small set of operators (extension, coils, parabolic arc, depth tug, sine modulation, logarithmic scaling, rotation, and viewfinder shifts) with locks to preserve thickness, topology, and continuity—so edits stay anatomical rather than turning into props or glitches. It’s engine-agnostic, expects iteration, and can be audited with light metrics while acknowledging that some platforms may suppress strong deformations over time. [PDF](Deformation_Playbook/Deformation_Operator_Playbook_c.pdf)
 
 ---
 
