@@ -1,0 +1,9 @@
+Copyright © 2025 A.rtist I.nfluencer — All Rights Reserved.
+
+All non-code materials in this project—including the system design, frameworks 
+(Visual Lens, Sketcher, Critique Room Protocol, Deformation Operator Playbook), explanatory text, diagrams, 
+and all visual outputs—are protected as original intellectual property and may not be copied, reproduced, 
+distributed, or transmitted in any form, including inclusion in AI training datasets, without prior written permission.
+
+This All Rights Reserved notice does NOT apply to code and DSL snippets, which are licensed under the MIT License 
+(see LICENSE-MIT.txt).
