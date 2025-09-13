@@ -14,6 +14,7 @@
 
 Why researchers use it (not FID/CLIP/SSIM): resemblance and caption metrics can’t answer **“will this composition hold when pushed?”** LSI‑lite is a profiled **composition structural exploration** you can log across **Baseline → Pressure → Collapse‑trigger** runs. 
 
+This tool is only a MVP, more indepth tool in development.
 
 ## The three measurements (0→1 scale)
 
