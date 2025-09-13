@@ -3,6 +3,8 @@
 
 Diagnostic **telemetry** for images — not a taste meter. Use it to see **where** a picture holds or breaks under structural pressure.
 
+This tool is only a MVP, more indepth tool in development.
+
 ---
 
 ## Folder contents
