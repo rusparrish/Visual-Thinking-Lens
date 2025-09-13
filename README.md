@@ -57,6 +57,21 @@ Watermarked, read-only whitepapers and conceptual briefs outlining the framework
 
 ---
 
+### 🧪 LSI-lite: A Composition Analysis Tool (`/LSI`)
+
+LSI-lite (MVP) measures how an image behaves under compositional structure using three primitives: Δx (off-center gravity), rᵥ (void ratio), ρᵣ (rupture/mark energy) and tells you if it sits within intended bands for its class. It’s built to study stability and failure as you iterate, not to crown winners.
+Balance (Δx): How far the visual center is from the geometric center
+Density (rᵥ): The ratio of empty space to filled space
+Detail (ρᵣ): The amount of edge energy and texture density in key areas
+It combines these measurements into a 0-100 score and tells you whether an image "passes" basic compositional criteria structural exploration test.
+
+Why researchers use it (not FID/CLIP/SSIM).
+Resemblance and caption metrics can’t answer: will this composition hold when pushed? LSI-lite is a composition structural exploration test and a quick, profiled gate you can log across Baseline → Pressure → Collapse-trigger runs. 
+
+This tool is only a MVP, more indepth tool in development.
+
+---
+
 ### 🧪 Deformation Operator Playbook (`/Deformation_playbook`)
 
 The Deformation Operator Playbook is a practical prompting framework for intentional, repeatable figure warps that treats distortion as the body itself, guided by the flow Anchors → Select → Transforms → Constraints → Viewfinder. It offers a small set of operators (extension, coils, parabolic arc, depth tug, sine modulation, logarithmic scaling, rotation, and viewfinder shifts) with locks to preserve thickness, topology, and continuity—so edits stay anatomical rather than turning into props or glitches. It’s engine-agnostic, expects iteration, and can be audited with light metrics while acknowledging that some platforms may suppress strong deformations over time. [PDF](Deformation_Playbook/Deformation_Operator_Playbook_c.pdf)
