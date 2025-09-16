@@ -1,5 +1,6 @@
 # LSI‑lite — Profiled Composition Structural Test
 **Δx (off‑center gravity) · rᵥ (void ratio) · ρᵣ (rupture/mark energy)**
+
 Image Quality Assessment and AI art evaluation
 
 Diagnostic **telemetry** for images — not a taste meter. Use it to see **where** a picture holds or breaks under structural pressure.
