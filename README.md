@@ -59,7 +59,7 @@ Watermarked, read-only whitepapers and conceptual briefs outlining the framework
 
 ---
 
-### 🧪 LSI-lite: A Composition Analysis Tool (`/LSI`)
+### 🧪 LSI-lite: A Composition Analysis Tool (`/LSI_Image_Quality_Tools`)
 
 LSI-lite (MVP) measures how an image behaves under compositional structure using three primitives: Δx (off-center gravity), rᵥ (void ratio), ρᵣ (rupture/mark energy) and tells you if it sits within intended bands for its class. It’s built to study stability and failure as you iterate, not to crown winners.
 Balance (Δx): How far the visual center is from the geometric center
@@ -70,7 +70,7 @@ It combines these measurements into a 0-100 score and tells you whether an image
 Why researchers use it (not FID/CLIP/SSIM).
 Resemblance and caption metrics can’t answer: will this composition hold when pushed? LSI-lite is a composition structural exploration test and a quick, profiled gate you can log across Baseline → Pressure → Collapse-trigger runs. 
 
-This tool is only a MVP, more indepth tool in development.
+This tool while only only a MVP, the same folder has a release v2 with color telemetry --> lets LSI look in color alongside grayscale—purely for diagnostics, not for changing the score or acceptance. It computes a color-based subject/background mask and a luminance-only balance read, and exports those plus simple “difference” values. It only shows a one-line Color audit when those color reads meaningfully disagree with the gray read, flagging where color may be skewing the composition.
 
 ---
 
