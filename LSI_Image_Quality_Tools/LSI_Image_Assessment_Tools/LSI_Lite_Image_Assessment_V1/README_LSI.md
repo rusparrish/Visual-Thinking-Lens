@@ -3,6 +3,8 @@
 
 Image Quality Assessment and AI art evaluation
 
+This is built to study stability, not to crown winners. Balance (Δx): How far the visual center is from the geometric center Density (rᵥ): The ratio of empty space to filled space Detail (ρᵣ): The amount of edge energy and texture density in key areas. It helps distinguish delta in AI and human default.
+
 Diagnostic **telemetry** for images — not a taste meter. Use it to see **where** a picture holds or breaks under structural pressure.
 
 This tool is only a MVP, more indepth tool in development.
@@ -101,6 +103,10 @@ priority_knob,priority_score,dx_roi_used
 - Single‑pass Δx (no recompute); EXIF‑aware load; masks are `uint8`.  
 - Landscape reflection probe affects **Δx only**.  
 - Record: Python/OpenCV/NumPy/pandas versions and any denoise/sharpen steps (they affect ρᵣ).
+
+---
+
+This is not recognition or a “style police” or a judgement on "aesthetics." It’s a tiny, defensible ruler over three compositional 101 primitives. Think of it as a quick ruler for balance, void, and stroke coherence. LSI-lite as a complementary metric in the generative AI evaluation ecosystem.
 
 ---
 
