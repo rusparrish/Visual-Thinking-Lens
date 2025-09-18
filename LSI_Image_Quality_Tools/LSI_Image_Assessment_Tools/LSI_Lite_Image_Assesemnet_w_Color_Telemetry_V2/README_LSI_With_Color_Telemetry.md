@@ -2,7 +2,14 @@
 
 **Updated:** 2025-09-16 13:40
 
-This package is the color‑telemetry variant of **LSI‑lite** (Δx, rᵥ, ρᵣ). It keeps the **meter unchanged** (gate, weights, band guards) and adds **diagnostic** color reads to explain divergences. Acceptance is still: **`LSI_lite_100 ≥ 55` AND no RED bands**.
+Image Quality Assessment and AI art evaluation. For single image or batch/iterative images under recursive exploration. Δx (off‑center gravity) · rᵥ (void ratio) · ρᵣ (rupture/mark energy)
+
+This is built to study stability, not to crown winners. Balance (Δx): How far the visual center is from the geometric center Density (rᵥ): The ratio of empty space to filled space Detail (ρᵣ): The amount of edge energy and texture density in key areas. It helps distinguish delta in AI and human default.
+
+Diagnostic telemetry for images — not a taste meter. Use it to see where a picture holds or breaks under structural pressure. This tool is only a MVP, more indepth tool in development.
+
+
+**This package is the color‑telemetry** variant of **LSI‑lite** (Δx, rᵥ, ρᵣ). It keeps the **meter unchanged** (gate, weights, band guards) and adds **diagnostic** color reads to explain divergences. Acceptance is still: **`LSI_lite_100 ≥ 55` AND no RED bands**.
 
 ---
 
@@ -17,6 +24,21 @@ LSI_With_Color_Telemetry/
 ├── README_LSI-lite_Case_Studies_v2.md
 └── README_LSI-lite_Color_Telemetry_Expanded.md
 ```
+
+---
+
+## What LSI‑lite measures (0–1 primitives)
+- **Δx — Off‑center gravity / frame tension.** Edge‑first centroid distance from frame center (fallback: foreground centroid). Low = near‑center.  
+- **rᵥ — Void ratio / breathing space.** `rᵥ = 1 − fill`, where *fill* is area of a **non‑semantic** foreground mask (Otsu → largest component → morphology). Higher = more open space.  
+- **ρᵣ — Rupture energy / mark pressure.** Laplacian energy averaged over subject + halo (or full frame per profile). Higher = more small‑scale contrast/edge activity.
+
+### Profiles (weights • masks • notes)
+- **Figure_Default** — Δx **.45**, rᵥ **.35**, ρᵣ **.20**; halo ≈ **0.08**.  
+- **MarkMaking_Expressive** — **.40/.30/.30**; halo ≈ **0.12**; more permissive ρᵣ band.  
+- **Landscape** — rᵥ **.40**, Δx **.35**, ρᵣ **.25**; `rho_mask=full`; *reflection probe* may apply a **Δx ROI** (`top_frac ≈ 0.60`) when water‑like symmetry is detected. **rᵥ/ρᵣ are always full‑frame.**
+
+### Gate rule (accept / reject)
+An image **ACCEPTS** iff **`LSI_lite_100 ≥ 55`** **and** **all bands are OK** (no **RED**). Band violations override score.
 
 ---
 
@@ -93,6 +115,8 @@ Where the enum includes: `band_red, lsi_gate, unknown_input, calc_error, roi_mis
 - color mask overlay, luminance balance line
 - the standard 3×3 grid (original, edges, masks, Laplacian heat, band gauges, acceptance stamp)
 
+- **Visual exports:** single‑image grid (original, edges, masks, Laplacian heat, band gauges, accept/reject stamp) and optional batch charts.
+
 ---
 
 ## Batch views (dataset level)
@@ -107,6 +131,25 @@ Existing plots remain: score histogram (+ gate at 55), band‑failure breakdown,
 
 ## Limits & watch‑outs
 Color telemetry can mislead under heavy casts/LEDs, glossy blacks/neons, or dense patterns near center. Treat audits as **look notes**, not fails. Telemetry **never** gates acceptance.
+
+---
+
+## Typical use cases
+- **Guardrail**: auto‑reject Δx RED or ρᵣ RED before surfacing results.  
+- **A/B prompts**: baseline → pressure → contradiction; log first failing knob.  
+- **Failure atlas**: cluster by first failing primitive (dx/rv/rho) and feed back to training/prompting.  
+- **Education**: consistent structural feedback (placement, void, edge commitment).
+
+---
+
+## Versioning & reproducibility
+- Single‑pass Δx (no recompute); EXIF‑aware load; masks are `uint8`.  
+- Landscape reflection probe affects **Δx only**.  
+- Record: Python/OpenCV/NumPy/pandas versions and any denoise/sharpen steps (they affect ρᵣ).
+
+---
+
+This is not recognition or a “style police” or a judgement on "aesthetics." It’s a tiny, defensible ruler over three compositional 101 primitives. Think of it as a quick ruler for balance, void, and stroke coherence. LSI-lite as a complementary metric in the generative AI evaluation ecosystem.
 
 ---
 
