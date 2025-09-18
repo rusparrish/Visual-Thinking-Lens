@@ -2,8 +2,6 @@
 **Color Telemetry v2 — README**  
 Updated: 2025-09-16 01:31
 
-# LSI‑lite — Profiled Composition Stress Test (Δx, rᵥ, ρᵣ)
-
 > Diagnostic telemetry for images — not a taste meter. This README is the **explainer** for LSI‑lite itself (the metric and workflow), not the case studies.
 > Image Quality Assessment and AI art evaluation. LSI-lite is a profiled composition “stress test” that measures Δx (off-center gravity), rᵥ (void ratio), and ρᵣ (rupture/mark energy), combines them into LSI_lite_100 (0–100), and accepts an image only if ≥55 with no RED bands. It uses a non-semantic foreground mask for rᵥ, Laplacian energy for ρᵣ, and an edge/foreground centroid for Δx, with profiles to study structural stability/failure across iterations rather than aesthetics. Can be used for single image or batch/iterative images under recursive exploration. It helps distinguish delta in AI and human default.
 
