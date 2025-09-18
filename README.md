@@ -5,8 +5,9 @@
 
 ## Overview
 
-The **Visual Thinking Lens (VTL)** is a Recursive Lab for Visual Intelligence. Don’t just make images. Make images that speak. Most AI images form through default mimicry and aesthetic averages, not authorship. 
+The **Visual Thinking Lens (VTL)** is a Recursive Lab for Visual Intelligence. Don’t just make images. Make images that speak. Most AI images form through default mimicry and aesthetic averages, not authorship. The Lens is a role-structured, multi-engine scaffold that combines named feature concepts (axes), causal/consistency checks (validators), and contrastive casework to make models explain, test, and repair their own judgments.
 
+## What the Lens Is
 The Visual Thinking Lens is a multi-engine, recursive critique field that works by applying structural intelligence to prompts, compositions, and symbolic logic. It (re)builds imagery in the ways defaults cannot see. It interrogates images **not by style, but by structure**. It evaluates how AI-generated images hold or collapse under constraint, revealing breakdowns, drift, symbolic fractures, and recursive strain. So don’t just make images, interrogate them and then remake them into images that speak. Most AI images aren’t composed, they form through default mimicry, not authorship, this Lab is out to change that. 
 
 This is not a toolkit. It is a **lens**: a reasoning engine that turns glitch into architecture, and failure into consequence. A set of tools that apply pressure to the underlying structure of diffusion, prompting, composition and remaking of almost any type of images (real or AI). It is a:
@@ -127,8 +128,7 @@ See `/legal/LICENSE.md`, `/legal/visual-assets-license.md`, and `/NOTICE.md` for
 ---
 
 ## Research Use
-
-This system was built independently inside GPT-4 as a recursive critique engine.  
+ 
 If you’re working on **LLM visual alignment, interpretability tooling, or structural image reasoning**, you can reach out via:
 
 📧 russellgparrish@gmail.com  
