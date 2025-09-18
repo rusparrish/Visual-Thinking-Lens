@@ -1,7 +1,7 @@
 # LSI‑lite — Profiled Composition Structural Test
 **Δx (off‑center gravity) · rᵥ (void ratio) · ρᵣ (rupture/mark energy)**
 
-Image Quality Assessment and AI art evaluation
+Image Quality Assessment and AI art evaluation. For single image or batch/iterative images under recursive exploration. 
 
 This is built to study stability, not to crown winners. Balance (Δx): How far the visual center is from the geometric center Density (rᵥ): The ratio of empty space to filled space Detail (ρᵣ): The amount of edge energy and texture density in key areas. It helps distinguish delta in AI and human default.
 
@@ -19,8 +19,6 @@ This tool is only a MVP, more indepth tool in development.
 - **`README_LSI-lite Case_Studies.md`** — README for the case studies only.  
 - **`README_explainer.md`** — Full narrative explainer for the metric (long‑form).  
 - **`Test_Images/`** — Sample inputs for quick validation.
-
-> Tip: Keep **explainer** and **case studies** readmes alongside this standard README to cover both “how it works” and “what it shows.”
 
 ---
 
