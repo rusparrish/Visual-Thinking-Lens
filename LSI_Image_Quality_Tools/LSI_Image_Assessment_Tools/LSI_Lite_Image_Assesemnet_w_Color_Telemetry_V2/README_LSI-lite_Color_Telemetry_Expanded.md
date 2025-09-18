@@ -116,7 +116,9 @@ Score histogram (+ gate line @55) • Band‑failure breakdown • Priority‑kn
 - Systematic Gap notes (optional).  
 - Include a **Color audit** line **only** when telemetry diverges; otherwise omit any mention of color.
 
-- ## What it is not
+---
+
+## What it is not
 
 - **Not aesthetic judgment.** “Accepted” = within intended **structural bands**, not “good art.”  
 - **Not universal.** Built around Western composition heuristics; many excellent works will fail intentionally.  
@@ -179,9 +181,15 @@ Intentional choice (breaking rules)
 Cultural/stylistic context (asymmetry vs Western centering)
 AI default failure (model collapse into smoothed mediocrity)
 
+Non-linear path (what we actually see) 
+Default → Collapse → Cohesion → New Center
+ or
+Default → Deviation → Poise (hold) → Deconstruction (on purpose)
+ LSI marks the state changes, not a pass/fail morality.
+
 What the AI does: Rapidly identifies structural patterns, deviations, mark-making quality.
 What the human does: Distinguishes between intentional choice and algorithmic failure.
-This is mathematical language for discussing artistic intention.
+This is: Mathematical language for discussing artistic intention.
 
 ---
 
