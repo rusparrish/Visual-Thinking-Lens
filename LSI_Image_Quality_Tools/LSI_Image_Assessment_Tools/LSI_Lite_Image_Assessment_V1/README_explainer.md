@@ -93,6 +93,8 @@ priority_knob,priority_score,dx_roi_used
 - **Not aesthetic judgment.** “Accepted” = within intended **structural bands**, not “good art.”  
 - **Not universal.** Built around Western composition heuristics; many excellent works will fail intentionally.  
 - **Not semantic.** It doesn’t read iconography, narrative, color, or culture.
+  
+This is not recognition or a “style police” or a judgement on "aesthetics." It’s a tiny, defensible ruler over three compositional 101 primitives. Think of it as a quick ruler for balance, void, and stroke coherence. LSI-lite as a complementary metric in the generative AI evaluation ecosystem.
 
 
 ## What this tool is good for
