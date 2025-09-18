@@ -12,8 +12,8 @@ This tool is only a MVP, more indepth tool in development.
 ---
 
 ## Folder contents
-- **`LSI_lite_clean_colab_(Locked_v2).ipynb`** — Colab/Notebook workflow with visualizations (single/batch runs, grids, charts).  
-- **`lsi_lite_clean_colab_(locked_v2).py`** — Python script/module for local runs (CLI-friendly; same logic as notebook).  
+- **`LSI_lite_clean_colab_(Locked_v2) (1).ipynb`** — Colab/Notebook workflow with visualizations (single/batch runs, grids, charts).  
+- **`lsi_lite_clean_colab_(locked_v2) (1).py`** — Python script/module for local runs (CLI-friendly; same logic as notebook).  
 - **`LSI_lite_Profiled_Composition_Structural_Test_(Δx_rᵥ_ρᵣ)_v2.pdf`** — Metric explainer (profiles, bands, gate rule).  
 - **`LSI_lite_Case Studies_Structural_Exploration_Across_Δx_rᵥ_ρᵣ.pdf`** — Case study compendium (10 mixed sets).  
 - **`README_LSI-lite Case_Studies.md`** — README for the case studies only.  
