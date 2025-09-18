@@ -62,11 +62,12 @@ Watermarked, read-only whitepapers and conceptual briefs outlining the framework
 
 ### 🧪 LSI-lite: A Composition Analysis Tool (`/LSI_Image_Quality_Tools`)
 
-LSI-lite (MVP) measures how an image behaves under compositional structure using three primitives: Δx (off-center gravity), rᵥ (void ratio), ρᵣ (rupture/mark energy) and tells you if it sits within intended bands for its class. It’s built to study stability and failure as you iterate, not to crown winners.
-Balance (Δx): How far the visual center is from the geometric center
-Density (rᵥ): The ratio of empty space to filled space
-Detail (ρᵣ): The amount of edge energy and texture density in key areas
-It combines these measurements into a 0-100 score and tells you whether an image "passes" basic compositional criteria structural exploration test.
+LSI-lite (MVP) measures how an image behaves under compositional structure using three primitives: Δx (off-center gravity), rᵥ (void ratio), ρᵣ (rupture/mark energy) and tells you if it sits within intended bands for its class. It’s built to study stability, not to crown winners. Balance (Δx): How far the visual center is from the geometric center Density (rᵥ): The ratio of empty space to filled space Detail (ρᵣ): The amount of edge energy and texture density in key areas It combines these measurements into a 0-100 score for how an image lines up or "passes" basic structural compositional criteria. It helps distinguish delta in AI and human default.
+
+- Balance (Δx): How far the visual center is from the geometric center
+- Density (rᵥ): The ratio of empty space to filled space
+- Detail (ρᵣ): The amount of edge energy and texture density in key areas
+- It combines these measurements into a 0-100 score and tells you whether an image "passes" basic compositional criteria structural exploration test.
 
 Why researchers use it (not FID/CLIP/SSIM).
 Resemblance and caption metrics can’t answer: will this composition hold when pushed? LSI-lite is a composition structural exploration test and a quick, profiled gate you can log across Baseline → Pressure → Collapse-trigger runs. 
