@@ -51,7 +51,7 @@ See `/legal/LICENSE.md`, `/legal/visual-assets-license.md`, and `/NOTICE.md` for
 
 ## Research Use
 
-This system was built independently inside GPT-4 as a recursive critique engine.  
+This system was built independently inside AI as a recursive critique engine.  
 If you’re working on **LLM visual alignment, interpretability tooling, or structural image reasoning**, you can reach out via:
 
 📧 russellgparrish@gmail.com  
