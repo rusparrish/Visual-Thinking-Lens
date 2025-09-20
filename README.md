@@ -34,32 +34,6 @@ Ultimately, a system of 60+ axes, directions, and vocabulary sets, that provide 
 
 ---
 
-## Repository Contents
-
-### 📘 Core Documents (`/docs`)
-
-Watermarked, read-only whitepapers and conceptual briefs outlining the framework:
-
-- **A Constraint Dialectic Engine for Recursive Image + Symbolic Critique** – How the Lens engine is unique and why it is different. [PDF](docs/Dialectic_Engine_Recursive_Symbolic_Critiques.pdf)
-- **Visual Thinking Lens Stack** – Overview of recursive architecture for image reasoning. [PDF](docs/visual-thinking-lens-stack.pdf)
-- **Introduction: Sketcher Lens** – Philosophy of the structural critique engine (no internals disclosed). [PDF](docs/introduction-sketcher-lens.pdf)
-- **Sketcher as Scaffold: How the Lens Rewrites GPT's Reflex** - Sketcher Lens interrupts GPT’s generative reflex by applying prompt-level scaffolding that forces structural consequence into the image. [PDF](docs/Sketcher_Scaffold_The_Lens_Rewrites_GPT_Reflex.pdf)
-- **Artist's Lens (Brief Explanation)** – Poise, restraint, and delay as structural forces. [PDF](docs/artist-lens-brief-explanation.pdf)
-- **Off-Center Fidelity: Drift as Creative Control** – Drift and collapse can be reframed as reproducible constraint basins—stable off-center zones defined by Δx, r_v, and ρ_r—that act as interpretable control levers rather than failures. [PDF](docs/Off-Center_Fidelity_Constraint.pdf)
-- **How Models Fake Seeing** – Diagnosing simulated vision in generative systems. [PDF](docs/how-models-fake-seeing.pdf)
-- **Failure Taxonomy: Evidence for Generative Model Collapse Modes** - Systematically categorizing evidences of failure modes in generative outputs, using the Sketcher Lens and CLIP, for diagnosing and understanding collapse patterns. [PDF](docs/Failure-Taxonomy-Generative-Collapse-Modes.pdf)
-- **Whisperer Walk: Recursive Compression into Spatial Realization** – AI image study showing symbolic recursion under structured visual critique. [PDF](docs/Recursive-Compression-Spatial-Realization.pdf)
-- **Visual Systems at the Edge of Contradiction** – Materializing tension and refusal. [PDF](docs/visual-systems-at-the-edge-of-contradiction.pdf)
-- **μ Negotiation: Off-Center Fidelity in Generative Models** – Exposing how fidelity emerges off-center, in the unstable edge between coherence and fracture. [PDF](docs/μ-Negotiation_Off-Center-Fidelity-Generative-Models-c.pdf)
-- **Working Theory** – Structural consequence as a measure of visual intelligence. [PDF](docs/visual-thinking-lens-working-theory.pdf)
-- **Constraint Layer & Logic Tags** – How structured prompts behave differently from descriptive ones. [PDF](docs/constraint-layer-and-logic-tags.pdf)
-- **Prompting Against Collapse (Dialectic Structures)** – Principles for tension-driven prompting. [PDF](docs/prompting-against-collapse-dialectic-structures.pdf)
-- **Concept Note: Volumetric Container of Force** – A validator concept for visual strain detection. [PDF](docs/concept-note-volumetric-container-of-force.pdf)
-- **Recursive Intelligence Under Constraint** – Canonical artifact showing collapse as structure. [PDF](docs/recursive-intelligence-under-constraint.pdf)
-- **Bending the Tokens: Structural Pressure for AI Imagery** - Deconstructing generative images to reshape underlying architecture. [PDF](docs/Bending_the_Tokens.pdf)
-
----
-
 ### 🧪 LSI-lite: A Composition Analysis Tool (`/LSI_Image_Quality_Tools`)
 
 LSI-lite (MVP) measures how an image behaves under compositional structure using three primitives: Δx (off-center gravity), rᵥ (void ratio), ρᵣ (rupture/mark energy) and tells you if it sits within intended bands for its class. It’s built to study stability, not to crown winners. Balance (Δx): How far the visual center is from the geometric center Density (rᵥ): The ratio of empty space to filled space Detail (ρᵣ): The amount of edge energy and texture density in key areas It combines these measurements into a 0-100 score for how an image lines up or "passes" basic structural compositional criteria. It helps distinguish delta in AI and human default.
@@ -73,6 +47,44 @@ Why researchers use it (not FID/CLIP/SSIM).
 Resemblance and caption metrics can’t answer: will this composition hold when pushed? LSI-lite is a composition structural exploration test and a quick, profiled gate you can log across Baseline → Pressure → Collapse-trigger runs. It is in collaboration, not competitive.
 
 This tool while only only a MVP, the same folder has a release v2 with color telemetry --> lets LSI look in color alongside grayscale—purely for diagnostics, not for changing the score or acceptance. It computes a color-based subject/background mask and a luminance-only balance read, and exports those plus simple “difference” values. It only shows a one-line Color audit when those color reads meaningfully disagree with the gray read, flagging where color may be skewing the composition.
+
+---
+
+## Repository Contents
+
+### 📘 Core Documents (`/docs`)
+
+Watermarked, read-only whitepapers and conceptual briefs outlining the framework:
+
+System Explainers: Documents that help explain what the Lens is and what it does.
+- **Visual Thinking Lens Stack** – Overview of recursive architecture for image reasoning. [PDF](docs/visual-thinking-lens-stack.pdf)
+- **Introduction: Sketcher Lens** – Philosophy of the structural critique engine (no internals disclosed). [PDF](docs/introduction-sketcher-lens.pdf)
+- **Sketcher as Scaffold: How the Lens Rewrites GPT's Reflex** - Sketcher Lens interrupts GPT’s generative reflex by applying prompt-level scaffolding that forces structural consequence into the image. [PDF](docs/Sketcher_Scaffold_The_Lens_Rewrites_GPT_Reflex.pdf)
+- **Artist's Lens (Brief Explanation)** – Poise, restraint, and delay as structural forces. [PDF](docs/artist-lens-brief-explanation.pdf)
+- **A Constraint Dialectic Engine for Recursive Image + Symbolic Critique** – How the Lens engine is unique and why it is different. [PDF](docs/Dialectic_Engine_Recursive_Symbolic_Critiques.pdf)
+
+Core Theory & Architecture: Defines the system’s architecture, logic, and grounding.
+- **Working Theory** – Structural consequence as a measure of visual intelligence. [PDF](docs/visual-thinking-lens-working-theory.pdf)
+- **Foundational Architecture for Recursive Visual Intelligence** - The system doesn’t improve images, it interrogates their ability to hold structure. This isn’t a toolkit for artists, it’s a pressure engine for aligning large language models with visual consequence. [PDF](docs/Foundational_Architecture_Recursive_Visual_Intelligence.1.pdf)
+- **Constraint Layer & Logic Tags** – How structured prompts behave differently from descriptive ones. [PDF](docs/constraint-layer-and-logic-tags.pdf)
+
+Stability, Drift, and Collapse: Formalizing drift, collapse, and constraint basins as reproducible fields.
+- **Off-Center Fidelity: Drift as Creative Control** – Drift and collapse can be reframed as reproducible constraint basins—stable off-center zones defined by Δx, r_v, and ρ_r—that act as interpretable control levers rather than failures. [PDF](docs/Off-Center_Fidelity_Constraint.pdf)
+- **Failure Taxonomy: Evidence for Generative Model Collapse Modes** - Systematically categorizing evidences of failure modes in generative outputs, using the Sketcher Lens and CLIP, for diagnosing and understanding collapse patterns. [PDF](docs/Failure-Taxonomy-Generative-Collapse-Modes.pdf)
+- Constraint Gravity: Thirty Figures Without Collapse \ This study tests how stable an AI figure can be across thirty recursive generations. What emerges is not novelty, but refined pressure memory and a glimpse of machine restraint observed as memory. [PDF](docs/Constraint_Gravity_Thirty_Figures_Without_Collapse.pdf)
+- **μ Negotiation: Off-Center Fidelity in Generative Models** – Exposing how fidelity emerges off-center, in the unstable edge between coherence and fracture. [PDF](docs/μ-Negotiation_Off-Center-Fidelity-Generative-Models-c.pdf)
+
+Interpretability and Research Probes: Bridging Lens logic with AI interpretability and research tool use.
+- **How Models Fake Seeing** – Diagnosing simulated vision in generative systems. [PDF](docs/how-models-fake-seeing.pdf)
+- **Introduction: Recursive Image Scoring for AI-Generated Art** - This framework introduces a new scoring system designed to evaluate AI-generated images based on structural integrity, symbolic recursion, and decision making logic, not polish or aesthetics. [PDF](docs/Recursive_Image_Scoring_AI-Generated_Art_Framework-c.pdf)
+- **Whisperer Walk: Recursive Compression into Spatial Realization** – AI image study showing symbolic recursion under structured visual critique. [PDF](docs/Recursive-Compression-Spatial-Realization.pdf)
+- **Recursive Intelligence Under Constraint** – Canonical artifact showing collapse as structure. [PDF](docs/recursive-intelligence-under-constraint.pdf)
+
+Artistic Extensions: Pushing into symbolic recursion, refusal, and design philosophy.
+- **Visual Systems at the Edge of Contradiction** – Materializing tension and refusal. [PDF](docs/visual-systems-at-the-edge-of-contradiction.pdf)
+- **Concept Note: Volumetric Container of Force** – A validator concept for visual strain detection. [PDF](docs/concept-note-volumetric-container-of-force.pdf)
+- **Prompting Against Collapse (Dialectic Structures)** – Principles for tension-driven prompting. [PDF](docs/prompting-against-collapse-dialectic-structures.pdf)
+- **Bending the Tokens: Structural Pressure for AI Imagery** - Deconstructing generative images to reshape underlying architecture. [PDF](docs/Bending_the_Tokens.pdf)
 
 ---
 
