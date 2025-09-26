@@ -88,7 +88,7 @@ This tool while only only a MVP, the same folder has a release v2 with color tel
 
 ---
 
-### 🧪 DOff-Center Fidelity (OCF): Constraint Basins for Stability & Drift in Generative Models (`/Off_Center_Protocol`)
+### 🧪 Off-Center Fidelity (OCF): Constraint Basins for Stability & Drift in Generative Models (`/Off_Center_Protocol`)
 
 Most models collapse to *safe center*. OCF reframes that as **geography**: there are reproducible *attractor basins* where off-center images remain coherent. By measuring Δx, rᵥ, ρᵣ and applying small, engine-aware nudges (plus a one-click crop), you can hit those basins **reliably**—and explain *why* a result passed or failed. This repository accompanies the proposal and packages it as a **conversational protocol** you can run in any chat interface to get consistent, measurable results across engines. [PDF](Off_Center_Protocol/Off-Center_Fidelity_Constraint_Basins_Stability_Drift_Proposal+Conversational_Protocol)_c.pdf)
 
