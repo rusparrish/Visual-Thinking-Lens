@@ -1,4 +1,4 @@
-# Off-Center Fidelity (OCF): Constraint Basins for Stability & Drift in Generative Models
+# Off-Center Fidelity (OCF): Constraint Basins for Stability & Drift in Generative Models (Compositional Analysis)
 
 **Ghost Density & companions** — a practical, repeatable way to steer models *away* from center-gravity and into artistically stable off-center compositions using three measurable dials:
 
@@ -17,18 +17,21 @@ Most models collapse to *safe center*. OCF reframes that as **geography**: there
 OCF = **interpretability + control**, not another generator.
 
 ---
-
 ## What’s in here
 
 - `docs/OCF_Proposal.pdf` – the full paper (proposal status; empirical envelopes, not CIs).  
-- `protocol/`  
-  - `prompts/` – profile “spines” (plain → numeric) for Edge, Horizon, Field-Void  
-  - `checklists.md` – quick probes for Δx / rᵥ / ρᵣ with pass/fail thresholds  
-  - `loop.md` – conversational scoring loop (copy/paste blocks)  
-- `tooling/`  
-  - `measure.md` – how to measure Δx, rᵥ, ρᵣ from a crop (fast, reproducible)  
-  - `notebooks/` – optional helpers for mask/edge counting (stubs)  
-- `examples/` – frogs, portraits, stills with CSV badges (pass_ideal / pass_engine_bias)
+- `Ghost_Density_Composition_Analysis_Protocol/`  
+- /Abstract/           Example images (optional)
+- /Batches/            Place .zip files for batch runs and where CSV/HTML exports can go
+- /Chair/              Example images (optional)
+- /Figure/             Example images (optional)
+- /Frogs/              Example images (optional)
+- /OA Portrait/        Example images (optional)
+- OCF_Ghost_Density—Scorer_Update_10_2_FINAL.ipynb   ← Colab/Notebook UI (primary)
+- /Portrait/           Example images (optional)
+- ocf_ghost_density—scorer_update_10_2_final.py       ← Scriptified runner (same logic)
+- /StillLife/          Example images (optional)
+- /Tree/               Example images (optional)
 
 ---
 
@@ -127,5 +130,14 @@ This block gates Edge/Horizon/Field consistently.
 Issues & PRs welcome. Please label: docs, protocol, engine-notes, or analysis.
 
 ## License
+- **Code & DSL snippets:** MIT License (see `LICENSE-MIT.txt`).
+- Please do not redistribute images in the example folders without permission.
+- **All other content (text, diagrams, images, frameworks):** All Rights Reserved (see `LICENSE-NONCODE.txt`). 
+- Methods, names, and framework: **A.rtist I.nfluencer — All Rights Reserved**.  
+- **Framework text, PDFs, images, case studies:** © 2025 **A.rtist I.nfluencer — Russell Parrish**. **All Rights Reserved.** No inclusion in AI training datasets without written permission.
+---
 
-MIT (or Apache-2.0). Include a proposal disclaimer: results are research-grade, not guarantees.
+## Contact / Notes
+
+- If you add new folders of images, the scorer doesn’t depend on folder names—use any category scheme you like.
+
