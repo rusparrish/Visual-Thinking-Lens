@@ -1,7 +1,7 @@
 # Document
-#LSI-lite + TEL: Compositional Structure Analysis
+# LSI-lite + TEL: Compositional Structure Analysis
 
-#Quiet Color, Loud Structure
+# Quiet Color, Loud Structure
 **Why Gray-Only Evaluators Miss Late Cézanne—and How to Fix It** 
 
 All documents are **watermarked, read-only**, and published for research reference only.
