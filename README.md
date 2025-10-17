@@ -151,6 +151,7 @@ If you’re working on **LLM visual alignment, interpretability tooling, or stru
 
 📧 russellgparrish@gmail.com  
 🌐 [www.artistinfluencer.com](http://www.artistinfluencer.com)
+ORCID: 0009-0008-9781-7995
 
 ---
 
