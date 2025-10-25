@@ -50,6 +50,12 @@ This tool while only only a MVP, the same folder has a release v2 with color tel
 
 ---
 
+### 🧪 The Visual Cognitive Load Index (VCLI-G) (`/Visual_Cognitive_Load_Index`)
+
+The Visual Cognitive Load Index (VCLI-G) is a way to measure how much visual effort an image asks from a viewer. It looks at structure — balance, voids, and tension — not beauty or subject matter. In simple terms, it tells you whether a picture’s complexity is “earned” (coherent, intentional) or just “busy.” By combining geometric cues like curvature, layering, and void control, it turns what artists sense intuitively into a number you can track or compare. It’s like having a visible dial for visual tension and compositional focus. It estimates earned complexity: how effectively structure sustains cognitive engagement without collapsing into noise. Paired with SCI (Structural Coherence Index), it provides a two-axis framework for analyzing and steering visual organization across human and AI-generated imagery.
+
+---
+
 ## Repository Contents
 
 ### 📘 Core Documents (`/docs`)
