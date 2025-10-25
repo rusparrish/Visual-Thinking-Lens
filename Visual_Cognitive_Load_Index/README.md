@@ -119,7 +119,7 @@ If you use this, please cite (fill in DOI when assigned):
   title        = {VCLI-G & SCI: Geometry-Coupled Visual Cognitive Load Index},
   author       = {Russell Parrish},
   year         = {2025},
-  url          = {https://github.com/your-org/your-repo},
+  url          = {https://github.com/rusparrish/Visual-Thinking-Lens},
   version      = {v0.2}
 }
 ```
