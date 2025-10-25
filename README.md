@@ -121,9 +121,33 @@ The Deformation Operator Playbook is a practical prompting framework for intenti
 
 ### 🧪 Examples (`/examples`)
 
-Library of before/after images in examples folder and at: https://www.artistinfluencer.com/library
+Visual Thinking Lens is a modular cognitive architecture for visual reasoning. It hosts adaptive specialists that applies a compact kernel (Δx (placement), rᵥ (void), ρᵣ (packing), plus validator guards to pressure-test images before polish. The system treats images as negotiations, not styles: diagnose → validate → route (Δ/Ω) → regenerate → rescore. It’s refusal-native (kills unearned emblems), consequence-first, and reproducible.
 
-Instead of “stacking synonyms,” the Lens redistributes conceptual gravity, pulling apart overused clusters and encouraging underrepresented variants to emerge. It is a Visual Collapse Lens, recursive prompt engine and aesthetic failure lab rolled into one.
+- Δ prior-undo (reduce collapse, restore near-miss tension),
+- Ω refusal spike (second geometry / occlusion / counter-light)
+- Small, legible kernel instead of black-box scores.
+- Refusal as first-class control (not failure).
+
+It turns image generation into a measurable negotiation loop. Prioritizing consequence over resemblance, logs provenance like a lab, and explains differences with advisory telemetry instead of aesthetic scores.
+
+It turns “taste” debates into structure-first discussions.
+
+The architecture: routes and governs modules.
+- Kernel (LSI / LSI-Lite): Δx, rᵥ, ρᵣ + validators (Prompt Pressure, Compositional Predictability, Sequence Drift Lock, Inversion Drift Check, Symbolic Gravity Flags).
+- Specialists:
+-- Sketcher (structure/pressure; chooses Δ prior-undo or Ω refusal).
+-- Artist’s Lens (attunement/delay; governs poise and timing).
+-- Marrowline (symbolic disruption; demotes trope to event).
+-- RIDP (reverse/failure tracing; reveals compositional collapse paths).
+- TEL (advisory): corridor₉₀ (lane breadth) and cadence_cv (row rhythm) explain why two PASS frames feel different, but it never gates.
+- Basins & Hulls: cluster the kernel space; convex hull gives exploration envelope; reported with pass-rate, safety margins, anisotropy (eigen-ratio), and RHA@K resampling to avoid sample-size hype.
+
+Cognitive Load & Coherence Layer (VCLI-G / SCI):
+- Extends the kernel into perceptual space. VCLI-G measures cognitive load (z₁–z₄: wander, void, torque, occlusion); SCI tracks structural coherence (continuity, regularity, rhythm).
+- Together they form a phase map of visual reasoning, showing whether tension is earned, overstressed, prematurely resolved, or default simple.
+- Profiles (AI Conservative / Physical Neutral / Physical Balanced+) act as control regimes, adjusting sensitivity between tension and order.
+
+Library of before/after images in examples folder and at: https://www.artistinfluencer.com/library
 
 Unlike Midjourney, DALL·E, Stable Diffusion Sora, Runway, Gen-2, the Lens works by analyzing images and the prompts that formed them, tracking breakdowns, then, it reverse-engineers fixes, layer by layer, token by token, through real-time critique cycles.
 
