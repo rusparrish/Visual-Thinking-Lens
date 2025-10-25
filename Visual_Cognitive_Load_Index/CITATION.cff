@@ -1,0 +1,27 @@
+
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "VCLI-G & SCI: Geometry-Coupled Visual Cognitive Load Index"
+version: "v0.2.0"
+date-released: "2025-10-25"
+authors:
+  - name: "Russell Parrish"
+    orcid: "https://orcid.org/0009-0008-9781-7995"
+repository-code: "https://github.com/rusparrish/Visual-Thinking-Lens"
+license: "MIT"
+keywords:
+  - computer vision
+  - visual cognition
+  - composition analysis
+  - image quality
+  - art & design
+preferred-citation:
+  type: article
+  title: "VCLI-G & SCI: A geometry-coupled proxy for perceptual load and structural coherence"
+  authors:
+    - family-names: "Parrish"
+      given-names: "Russell"
+      orcid: "https://orcid.org/0009-0008-9781-7995"
+  year: 2025
+  journal: "Preprint"
