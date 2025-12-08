@@ -11,7 +11,6 @@ Included Documents
 - **Visual Thinking Lens Stack** \ Overview of the recursive cognitive architecture powering VTL. [PDF](visual-thinking-lens-stack.pdf)
 - **Introduction: Sketcher Lens** \ Conceptual framing of the structural critique engine (no scoring or axis details disclosed). [PDF](introduction-sketcher-lens.pdf)
 - **Artist's Lens (Brief Explanation)** \ Poise, restraint, and delay as structural forces in visual reasoning. [PDF](artist-lens-brief-explanation.pdf)
-- **A Constraint Dialectic Engine for Recursive Image + Symbolic Critique** \How the Lens engine is unique and why it is different. [PDF](Dialectic_Engine_Recursive_Symbolic_Critiques)
 
 ## Core Theory & Architecture: Defines the system’s architecture, logic, and grounding.
 - **Working Theory** \ A high-level theory of visual consequence as a benchmark for intelligence. [PDF](visual-thinking-lens-working-theory.pdf)
@@ -19,7 +18,7 @@ Included Documents
 
 ## Stability, Drift, and Collapse: Formalizing drift, collapse, and constraint basins as reproducible fields.
 - **Off-Center Fidelity: Drift as Creative Control** \ Drift and collapse can be reframed as reproducible constraint basins—stable off-center zones defined by Δx, r_v, and ρ_r—that act as interpretable control levers rather than failures. [PDF](Off-Center_Fidelity_Constraint.pdf)
-- **Failure Taxonomy: Evidence for Generative Model Collapse Modes** \ Systematically categorizing evidences of failure modes in generative outputs, using the Sketcher Lens and CLIP, for diagnosing and understanding collapse patterns. [PDF](Failure-Taxonomy-Generative-Collapse-Modes)
+
 
 ## Artistic Extensions: Pushing into symbolic recursion, refusal, and design philosophy.
 - **Prompting Against Collapse (Dialectic Structures)** \ Principles for embedding contradiction and tension into prompts, avoiding list-based prompting. [PDF](prompting-against-collapse-dialectic-structures.pdf)
