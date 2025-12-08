@@ -106,19 +106,6 @@ The Deformation Operator Playbook is a practical prompting framework for intenti
 
 ---
 
-### 🧪 Case Studies (`/cases`)
-
-## Watermarked research artifacts demonstrating recursive critique under constraint:
-
-- **Opportunity Mapping** – How structural pressure reveals paths for refinement. [PDF](cases/case-opportunity-mapping.pdf)
-- **Where the Mark Begins** – Why tonal hierarchy precedes expressive surface. [PDF](cases/case-where-the-mark-begins.pdf)
-- **Engine Contrast** – Same prompt across engines, different collapse patterns. [PDF](cases/case-engine-contrast.pdf)
-- **Symbolic Recursion** – Refusal as structure under Marrowline critique. [PDF](cases/case-symbolic-recursion.pdf)
-- **Recursive Prompt Design** – When critique becomes compositional architecture. [PDF](cases/case-recursive-prompt-design.pdf)
-- **Constraint Gravity (Thirty Figures)** – Machine restraint under long-run constraint testing. [PDF](cases/case-constraint-gravity-thirty-figures.pdf)
-- **Soft Collapse** – Rebuilding structure through recursive pressure. [PDF](cases/case-soft-collapse.pdf)
-- **Concert Score** – Single-image walkthrough under full Lens scoring pressure. [PDF](cases/case-concert-score.pdf)
-
 ### 🧪 Examples (`/examples`)
 
 Visual Thinking Lens is a modular cognitive architecture for visual reasoning. It hosts adaptive specialists that applies a compact kernel (Δx (placement), rᵥ (void), ρᵣ (packing), plus validator guards to pressure-test images before polish. The system treats images as negotiations, not styles: diagnose → validate → route (Δ/Ω) → regenerate → rescore. It’s refusal-native (kills unearned emblems), consequence-first, and reproducible.
