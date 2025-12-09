@@ -46,7 +46,7 @@ LSI-lite (MVP) measures how an image behaves under compositional structure using
 Why researchers use it (not FID/CLIP/SSIM).
 Resemblance and caption metrics can’t answer: will this composition hold when pushed? LSI-lite is a composition structural exploration test and a quick, profiled gate you can log across Baseline → Pressure → Collapse-trigger runs. It is in collaboration, not competitive.
 
-This tool while only only a MVP, the same folder has a release v2 with color telemetry --> lets LSI look in color alongside grayscale—purely for diagnostics, not for changing the score or acceptance. It computes a color-based subject/background mask and a luminance-only balance read, and exports those plus simple “difference” values. It only shows a one-line Color audit when those color reads meaningfully disagree with the gray read, flagging where color may be skewing the composition.
+This tool while only only a MVP, the same folder has a release v3--> lets LSI look in color alongside grayscale—purely for diagnostics. 
 
 ---
 
