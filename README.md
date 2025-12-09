@@ -34,6 +34,12 @@ Ultimately, a system of 60+ axes, directions, and vocabulary sets, that provide 
 
 ---
 
+### 🧪 Kernel Metrics for Compositional Analysis
+
+Current evaluation metrics for generative image models (FID, CLIP, T2I-CompBench) measure semantic correctness and feature-space realism, but they miss a fundamental dimension: spatial reasoning. Models can satisfy prompts while exhibiting distinct compositional priors—habitual patterns in placement, void allocation, packing density, and mass distribution. This repository introduces a minimal geometric kernel (Δx, rᵥ, ρᵣ, μ, xₚ) that quantifies these spatial behaviors, revealing stable "compositional basins" where different engines naturally operate. Testing across 300+ images and 14 platforms shows that GPT and Sora cluster in right-biased, high-void regimes while MidJourney exhibits left-weighted compression, and these signatures remain stable across prompt variations. Critically, perturbation experiments demonstrate that geometric structure degrades before semantic failure—void ratio and cohesion decay provide early collapse signals invisible to semantic metrics. The framework is designed for practical adoption: geometric primitives computed from standard mask extraction, compatible with existing benchmarks, and applicable to version regression detection, model comparison, safety monitoring, and architectural fingerprinting. Full implementation notebooks, validation protocols, and cross-engine comparative studies are included for independent verification and extension.
+
+---
+
 ### 🧪 LSI-lite: A Composition Analysis Tool (`/LSI_Image_Quality_Tools`)
 
 LSI-lite (MVP) measures how an image behaves under compositional structure using three primitives: Δx (off-center gravity), rᵥ (void ratio), ρᵣ (rupture/mark energy) and tells you if it sits within intended bands for its class. It’s built to study stability, not to crown winners. Balance (Δx): How far the visual center is from the geometric center Density (rᵥ): The ratio of empty space to filled space Detail (ρᵣ): The amount of edge energy and texture density in key areas It combines these measurements into a 0-100 score for how an image lines up or "passes" basic structural compositional criteria. It helps distinguish delta in AI and human default.
