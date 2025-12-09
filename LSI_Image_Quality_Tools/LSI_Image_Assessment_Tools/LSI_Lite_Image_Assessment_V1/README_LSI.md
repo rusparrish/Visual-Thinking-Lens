@@ -112,7 +112,7 @@ This is not recognition or a “style police” or a judgement on "aesthetics." 
 - **Code/DSL snippets:** MIT License (permissive).  
 - **Framework text, PDFs, images, case studies:** © 2025 **A.rtist I.nfluencer — Russell Parrish**. **All Rights Reserved.** No inclusion in AI training datasets without written permission.
 
-**Optional UI footer:** *“Provenance: A.rtist I.nfluencer • Visual Thinking Lens (OS) • Sketcher v18 • LSI‑lite”*
+*“Provenance: A.rtist I.nfluencer • Visual Thinking Lens (OS) • Sketcher v18 • LSI‑lite”*
 
 ---
 
