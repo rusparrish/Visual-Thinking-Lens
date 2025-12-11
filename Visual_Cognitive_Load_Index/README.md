@@ -17,6 +17,8 @@ Together they map pictures into a 2‑axis space:
 
 ## What’s in this repo
 
+- `UPDATED_GITHUB_VCLI_G_04_VCLI_G_APE_and_RCE_12_25.ipynb` - **UPDATED** iterative and batch scoring, includes latest updates
+- `UPDATED_github_vcli_g_04_vcli_g_ape_and_rce_12_25.py` - **UPDATED** iterative and batch scoring, includes latest updates
 - `GITHUB_BATCH_of_Initial_v2_VCLI_G.ipynb` — Colab‑friendly notebook: upload images, score, and export CSV.
 - `github_batch_of_initial_v2_vcli_g.py` — script version for local/batch runs.
 - `The_Visual_Cognitive_Load_Index_(VCLI-G).pdf` — method overview and notes.
@@ -169,7 +171,7 @@ THE SOFTWARE.
 **Authorship**  
 This framework was architected by **Russell Parrish** and recursively co‑developed inside GPT, Gemini, and Claude. Every critique is human‑led; every recursion is model‑driven. The result: a reasoning layer authored through language, not image manipulation.
 
-*Provenance: A.rtist I.nfluencer • Visual Thinking Lens (OS) • Sketcher v18 • LSI‑lite*  
+*Provenance: A.rtist I.nfluencer • Visual Thinking Lens (OS)
 Learn more --> www.artistinfluencer.com
 
 ---
