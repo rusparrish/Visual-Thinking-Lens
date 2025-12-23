@@ -174,6 +174,8 @@ If used in research or development:
 
 ```
 Russell Parrish. Visual Thinking Lens: Kernel-Based Compositional Metrics, 2025.
+www.artistinfluencer.com
+russellgparrish@gmail.com
 ORCID: 0009-0008-9781-7995
 ```
 
@@ -201,8 +203,5 @@ MIT License — permitting open use, modification, and integration.
 
 ## Acknowledgments
 
-Developed as part of ongoing research into  
-**geometric inductive bias**,  
-**spatial priors**,  
-and **model‑agnostic evaluation techniques**.
+Developed as part of ongoing research into **geometric inductive bias**, **spatial priors**,and **model‑agnostic evaluation techniques**.
 
