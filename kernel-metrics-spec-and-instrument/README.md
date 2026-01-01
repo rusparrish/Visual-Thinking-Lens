@@ -119,8 +119,9 @@ scikit-image
 ## 📄 Citation
 
 ```
-Rus, A. (2025). Precise Mapping: Kernel Metrics → Gradient-Field Operations.
+Russell Parrish. (2025). Precise Mapping: Kernel Metrics → Gradient-Field Operations.
 A Deterministic Framework for Measuring Spatial Priors in Images.
+russellgparrish@gmail.com www.artistinfluencer.com
 ```
 
 ---
