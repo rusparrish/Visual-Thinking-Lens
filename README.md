@@ -5,66 +5,81 @@
 
 ## Overview
 
-The **Visual Thinking Lens (VTL)** is a Recursive Lab for Visual Intelligence. Don’t just make images. Make images that speak. Most AI images form through default mimicry and aesthetic averages, not authorship. The Lens is a role-structured, multi-engine scaffold that combines named feature concepts (axes), causal/consistency checks (validators), and contrastive casework to make models explain, test, and repair their own judgments.
+The **Visual Thinking Lens (VTL)** is an evaluation and diagnostic framework for generative visual systems. It measures structural and compositional behavior that semantic metrics do not capture.
 
-## What the Lens Is
-The Visual Thinking Lens is a multi-engine, recursive critique field that works by applying structural intelligence to prompts, compositions, and symbolic logic. It (re)builds imagery in the ways defaults cannot see. It interrogates images **not by style, but by structure**. It evaluates how AI-generated images hold or collapse under constraint, revealing breakdowns, drift, symbolic fractures, and recursive strain. So don’t just make images, interrogate them and then remake them into images that speak. Most AI images aren’t composed, they form through default mimicry, not authorship, this Lab is out to change that. 
+Most AI image outputs exhibit strong spatial priors and compositional defaults regardless of prompt content. VTL instruments these behaviors through geometry-first kernels, stability analysis, and controlled perturbation testing.
 
-This is not a toolkit. It is a **lens**: a reasoning engine that turns glitch into architecture, and failure into consequence. A set of tools that apply pressure to the underlying structure of diffusion, prompting, composition and remaking of almost any type of images (real or AI). It is a:
-
-- Recursive prompt-pressure engine for generative image collaboration. 
-- Diagnostic layer that reverse-engineers structural alternatives in AI-generated and human made imagery.
-- Symbolic/structural critique lens that rivals or exceeds native model feedback.
-- Scoring systems that create pressure loops not found in aesthetics-first systems.
-- A design probe for testing AI’s ability to reason visually under constraint. 
+Rather than optimizing aesthetics, the Lens is designed to:
+- Expose compositional bias and structural convergence
+- Detect early failure modes before semantic collapse
+- Compare cross-model spatial behavior
+- Enable controlled steering and diagnostic benchmarking
 
 ---
 
-## Why It Exists
+## What the Lens Is
+The Visual Thinking Lens is a multi-engine evaluation field that analyzes how generative models organize space under constraint.
+It focuses on:
+- Spatial priors and geometric bias
+- Stability basins and operating envelopes
+- Structural drift and collapse patterns
+- Prompt sensitivity versus model-driven behavior
 
-Most AI-generated imagery defaults to aesthetic gloss.  
-VTL was developed to see what machines miss:
+VTL evaluates images by structure rather than style. It measures how outputs respond to perturbation, variation, and constraint, revealing where models remain stable and where geometry begins to break.
 
-- Structural weakness masked by polish  
-- Semantic instability under recursion  
-- Pattern collapse disguised as coherence  
-- Symbolic voids where meaning should strain  
+## What This Is Not
+This is not a prompt collection or aesthetic tuning toolkit.
+- It is a measurement and diagnostic system intended for:
+- Model behavior analysis
+- Research instrumentation
+- Generative system evaluation
+- Creative tooling with structural control
 
-Ultimately, a system of 60+ axes, directions, and vocabulary sets, that provide AI systems, artists and makers an ability to learn, iterate and design. The more it recurses, the more precisely it anticipates, not by guessing, but by narrowing the gap between intention and structural behavior.
+## Core Capabilities
+The framework provides:
+- Geometry-first kernel metrics for spatial behavior
+- Cross-model compositional fingerprinting
+- Stability envelope and stress testing tools
+- Structural regression detection
+- Reproducible evaluation pipelines
 
 ---
 
 ### 🧪 Kernel Metrics for Compositional Analysis
 
-Current evaluation metrics for generative image models (FID, CLIP, T2I-CompBench) measure semantic correctness and feature-space realism, but they miss a fundamental dimension: spatial reasoning. Models can satisfy prompts while exhibiting distinct compositional priors—habitual patterns in placement, void allocation, packing density, and mass distribution. This repository introduces a minimal geometric kernel (Δx, rᵥ, ρᵣ, μ, xₚ) that quantifies these spatial behaviors, revealing stable "compositional basins" where different engines naturally operate. Testing across 300+ images and 14 platforms shows that GPT and Sora cluster in right-biased, high-void regimes while MidJourney exhibits left-weighted compression, and these signatures remain stable across prompt variations. Critically, perturbation experiments demonstrate that geometric structure degrades before semantic failure—void ratio and cohesion decay provide early collapse signals invisible to semantic metrics. The framework is designed for practical adoption: geometric primitives computed from standard mask extraction, compatible with existing benchmarks, and applicable to version regression detection, model comparison, safety monitoring, and architectural fingerprinting. Full implementation notebooks, validation protocols, and cross-engine comparative studies are included for independent verification and extension.
+Most evaluation metrics for generative image models (FID, CLIP, T2I-CompBench) measure semantic similarity and feature realism. They do not measure how models organize space.
+
+Generative systems often satisfy prompts while exhibiting strong compositional priors: consistent patterns in placement, void allocation, packing density, and mass distribution. This repository introduces a minimal geometry-first kernel (Δx, rᵥ, ρᵣ, μ, xₚ) that quantifies these spatial behaviors and exposes stable compositional basins where different engines naturally operate.
+
+Across hundreds of measured outputs and multiple platforms, distinct spatial signatures emerge. These patterns remain stable across prompt variation, indicating model-driven structure rather than prompt-driven layout.
+
+Perturbation experiments further show that geometric structure degrades before semantic failure. Void ratio and cohesion decay provide early collapse signals that standard evaluation metrics do not capture.
+
+The framework is designed for practical use. All metrics are computed from standard mask extraction and integrate with existing evaluation pipelines. Use cases include model comparison, regression detection, stability monitoring, and architectural fingerprinting.
+
+Implementation notebooks, validation protocols, and comparative studies are included for reproducibility and extension.
 
 ---
 
 ### 🧪 LSI-lite: A Composition Analysis Tool (`/LSI_Image_Quality_Tools`)
 
-LSI-lite (MVP) measures how an image behaves under compositional structure using three primitives: Δx (off-center gravity), rᵥ (void ratio), ρᵣ (rupture/mark energy) and tells you if it sits within intended bands for its class. It’s built to study stability, not to crown winners. Balance (Δx): How far the visual center is from the geometric center Density (rᵥ): The ratio of empty space to filled space Detail (ρᵣ): The amount of edge energy and texture density in key areas It combines these measurements into a 0-100 score for how an image lines up or "passes" basic structural compositional criteria. It helps distinguish delta in AI and human default.
+LSI-lite is a lightweight structural metric for evaluating compositional stability. It measures three primitives: Δx (spatial offset), rᵥ (void ratio), and ρᵣ (edge/mark density), then scores alignment to expected structural bands on a 0–100 scale.
 
-- Balance (Δx): How far the visual center is from the geometric center
-- Density (rᵥ): The ratio of empty space to filled space
-- Detail (ρᵣ): The amount of edge energy and texture density in key areas
-- It combines these measurements into a 0-100 score and tells you whether an image "passes" basic compositional criteria structural exploration test.
+Unlike semantic metrics (FID/CLIP/SSIM), LSI-lite tests whether composition holds under pressure. It’s designed for baseline → perturbation → collapse tracking, not aesthetic ranking.
 
-Why researchers use it (not FID/CLIP/SSIM).
-Resemblance and caption metrics can’t answer: will this composition hold when pushed? LSI-lite is a composition structural exploration test and a quick, profiled gate you can log across Baseline → Pressure → Collapse-trigger runs. It is in collaboration, not competitive.
-
-This tool while only only a MVP, the same folder has a release v3--> lets LSI look in color alongside grayscale—purely for diagnostics. 
+Includes MVP grayscale pipeline and optional color diagnostic version (v3) for extended analysis.
 
 ---
 
 ### 🧪 Kernel Metrics Spec and Instrument (`/kernel-metrics-spec-and-instrument`)
 
-Precise Mapping: Kernel Metrics → Gradient-Field Operations defines a deterministic framework for measuring spatial priors in images and pairs it with a working instrument. The document formalizes seven compositional kernel metrics—Δx, rᵥ, ρᵣ, μ, xₚ, θ, ds—and shows how each is instantiated as an operation on the gradient field |∇I|, treating every image as a force field of mass, void, and pull rather than a bag of objects. The accompanying notebook turns that specification into a diagnostic tool: given any image, it builds gradient and skeleton fields, void and mass masks, multi-panel overlays, and compositional fingerprints, then outputs the kernel metrics as a compact summary of how the frame is structured. Together, they provide a coherent way to see, quantify, and compare the spatial priors of both human and model-generated images—without touching training data or model internals.
+Defines a geometry-first framework for measuring spatial priors in images and provides a working diagnostic instrument. The spec formalizes seven kernel metrics (Δx, rᵥ, ρᵣ, μ, xₚ, θ, ds) as operations on the image gradient field. The accompanying notebook computes masks, structural overlays, compositional fingerprints, and kernel summaries for direct comparison across human and model-generated images.
 
 ---
 
 ### 🧪 The Visual Cognitive Load Index (VCLI-G) (`/Visual_Cognitive_Load_Index`)
 
-The Visual Cognitive Load Index (VCLI-G) is a way to measure how much visual effort an image asks from a viewer. It looks at structure — balance, voids, and tension — not beauty or subject matter. In simple terms, it tells you whether a picture’s complexity is “earned” (coherent, intentional) or just “busy.” By combining geometric cues like curvature, layering, and void control, it turns what artists sense intuitively into a number you can track or compare. It’s like having a visible dial for visual tension and compositional focus. It estimates earned complexity: how effectively structure sustains cognitive engagement without collapsing into noise. Paired with SCI (Structural Coherence Index), it provides a two-axis framework for analyzing and steering visual organization across human and AI-generated imagery.
+VCLI-G measures how much structural effort an image demands from a viewer. It evaluates balance, void control, layering, and tension to estimate “earned complexity” — sustained visual engagement driven by composition rather than surface detail. Paired with the Structural Coherence Index (SCI), it provides a two-axis framework for analyzing and steering visual organization across human and AI-generated imagery.
 
 ---
 
@@ -108,13 +123,13 @@ The Visual Cognitive Load Index (VCLI-G) is a way to measure how much visual eff
 
 ### 🧪 Off-Center Fidelity (OCF): Constraint Basins for Stability & Drift in Generative Models (`/Off_Center_Protocol`)
 
-Most models collapse to *safe center*. OCF reframes that as **geography**: there are reproducible *attractor basins* where off-center images remain coherent. By measuring Δx, rᵥ, ρᵣ and applying small, engine-aware nudges (plus a one-click crop), you can hit those basins **reliably**—and explain *why* a result passed or failed. This repository accompanies the proposal and packages it as a **conversational protocol** you can run in any chat interface to get consistent, measurable results across engines. [PDF](Off_Center_Protocol/Off-Center_Fidelity_Constraint_Basins_Stability_Drift_Proposal+Conversational_Protocol.pdf)
+OCF identifies stable off-center compositional basins where images remain coherent instead of collapsing to center defaults. Using Δx, rᵥ, and ρᵣ with small engine-aware nudges and controlled cropping, the protocol enables repeatable off-center placement and explains why results pass or fail. Includes a chat-compatible workflow for consistent cross-engine testing. [PDF](Off_Center_Protocol/Off-Center_Fidelity_Constraint_Basins_Stability_Drift_Proposal+Conversational_Protocol.pdf)
 
 ---
 
 ### 🧪 Deformation Operator Playbook (`/Deformation_playbook`)
 
-The Deformation Operator Playbook is a practical prompting framework for intentional, repeatable figure warps that treats distortion as the body itself, guided by the flow Anchors → Select → Transforms → Constraints → Viewfinder. It offers a small set of operators (extension, coils, parabolic arc, depth tug, sine modulation, logarithmic scaling, rotation, and viewfinder shifts) with locks to preserve thickness, topology, and continuity—so edits stay anatomical rather than turning into props or glitches. It’s engine-agnostic, expects iteration, and can be audited with light metrics while acknowledging that some platforms may suppress strong deformations over time. [PDF](Deformation_Playbook/Deformation_Operator_Playbook_c.pdf)
+A structured prompting framework for controlled figure deformation. Defines a small operator set (extension, arc, coil, depth tug, rotation, scaling, view shifts) with continuity and topology locks to preserve anatomy and structural coherence. Designed for iterative, engine-agnostic use and compatible with lightweight metric auditing. [PDF](Deformation_Playbook/Deformation_Operator_Playbook_c.pdf)
 
 ---
 
