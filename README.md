@@ -1,5 +1,8 @@
-# Visual Thinking Lens  
-**Recursive Critique for AI-Generated Imagery**
+# Visual Thinking Lens - A.rtist I.nfluencer 
+**AI generates infinite subjects.
+It repeats the same structure.**
+
+Applied AI evaluation framework for generative systems, measuring compositional bias and structural behavior across major platforms.
 
 ---
 
