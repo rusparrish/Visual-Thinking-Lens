@@ -111,6 +111,14 @@ header {
 
 main { padding: 2rem 2.5rem; }
 
+.page-intro {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+    max-width: 640px;
+}
+
 /* ── Upload zone ────────────────────────────────── */
 
 #upload-zone {
