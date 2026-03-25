@@ -1025,28 +1025,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 results.push({ ...mode, cx, cy, mu, rv });
             }
 
-            // Render scatter
-            const sw = scatterCanvas.parentElement.offsetWidth || 640;
-            scatterCanvas.width  = sw;
-            scatterCanvas.height = Math.round(sw * 0.38);
-            renderScatter(scatterCanvas, results);
-
-            // Integrity scores
+            // Integrity scores (no canvas — safe to render before visible)
             const omega = computeOmega(results);
             const gamma = computeGamma(results);
             const beta  = computeBeta(results);
             renderScorePanel(scorePanel, omega, gamma, beta);
 
-            // Full kernel — baseline vs confirmed edges
+            // Precompute kernel data before showing workspace
             const baselineMode  = results.find(r => r.short === 'Baseline');
             const confirmedMode = results.find(r => r.short === 'VTL×L−M');
-            if (baselineMode && confirmedMode) {
-                const baseKernel = computeFullKernel(baselineMode.field,  Gx, Gy, sobelMagField, W, H);
-                const confKernel = computeFullKernel(confirmedMode.field, Gx, Gy, sobelMagField, W, H);
-                renderKernelChart(kernelCanvas, baseKernel, confKernel);
-            }
+            const baseKernel = baselineMode  ? computeFullKernel(baselineMode.field,  Gx, Gy, sobelMagField, W, H) : null;
+            const confKernel = confirmedMode ? computeFullKernel(confirmedMode.field, Gx, Gy, sobelMagField, W, H) : null;
 
+            // Show workspace first so layout is computed, then render canvases
             workspace.style.display = 'block';
+
+            requestAnimationFrame(() => {
+                const sw = scatterCanvas.parentElement.offsetWidth || 640;
+                scatterCanvas.width  = sw;
+                scatterCanvas.height = Math.round(sw * 0.38);
+                renderScatter(scatterCanvas, results);
+
+                if (baseKernel && confKernel) {
+                    renderKernelChart(kernelCanvas, baseKernel, confKernel);
+                }
+            });
         } finally {
             processing.style.display = 'none';
         }

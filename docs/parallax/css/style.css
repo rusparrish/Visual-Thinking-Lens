@@ -305,27 +305,31 @@ hr.div {
 }
 
 .kdef-list {
-    display: grid;
-    grid-template-columns: 2rem 1fr;
-    gap: 0.18rem 0.7rem;
-    align-items: baseline;
+    display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
-.kdef-list dt {
+.kdef-row {
+    display: grid;
+    grid-template-columns: 2.2rem 1fr;
+    gap: 0 0.7rem;
+    align-items: baseline;
+    border-top: 1px solid var(--border);
+    padding: 0.28rem 0;
+}
+
+.kdef-term {
     font-size: 0.78rem;
     color: var(--accent);
     text-align: right;
-    padding-top: 0.28rem;
-    font-style: normal;
+    white-space: nowrap;
 }
 
-.kdef-list dd {
+.kdef-body {
     font-size: 0.62rem;
     color: var(--muted);
     line-height: 1.45;
-    padding-top: 0.28rem;
-    border-top: 1px solid var(--border);
 }
 
 .kdef-legend {
