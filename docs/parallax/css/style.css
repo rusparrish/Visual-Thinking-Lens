@@ -236,7 +236,7 @@ hr.div {
 
 .score-row {
     display: grid;
-    grid-template-columns: 1.4rem 9rem 3.8rem 2.8rem 1fr;
+    grid-template-columns: 1.4rem 9rem 3.8rem 11rem 1fr;
     align-items: baseline;
     gap: 0.5rem;
     padding: 0.35rem 0;

@@ -843,18 +843,20 @@ function renderKernelChart(canvas, baseK, confK) {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// INTEGRITY SCORING  Ω · Γ · Β
+// INTEGRITY SCORING  Ω · Γ · Δᵣ · Β
 // ═══════════════════════════════════════════════════════════════════
 
-// Ω — mask agreement: mean pairwise centroid distance across all modes
+// Ω — mask agreement: mean pairwise centroid distance across 9 independent masks
+// Excludes combined masks (derived from others, not independent observations)
 // Low = all masks agree, composition is structurally honest
 // High = masks pull in different directions, something was placed not found
 function computeOmega(results) {
+    const independent = results.filter(r => r.group !== 'combined');
     let sumDist = 0, count = 0;
-    for (let i = 0; i < results.length; i++) {
-        for (let j = i + 1; j < results.length; j++) {
-            const dx = results[i].cx - results[j].cx;
-            const dy = results[i].cy - results[j].cy;
+    for (let i = 0; i < independent.length; i++) {
+        for (let j = i + 1; j < independent.length; j++) {
+            const dx = independent[i].cx - independent[j].cx;
+            const dy = independent[i].cy - independent[j].cy;
             sumDist += Math.sqrt(dx * dx + dy * dy);
             count++;
         }
@@ -872,14 +874,33 @@ function computeGamma(results) {
     return Math.max(0, confirmed.rv - coneMax.rv);
 }
 
-// Β — blind spot mass: fraction of blind spot mask that carries content
-// In AI images: corrective gradient living where VTL sees nothing
-// In real photos: genuine color composition (color accents, intentional fields)
-// Read alongside Γ — high Β + high Γ = engineered; high Β + low Γ = real color work
+// Δᵣ — delta void: gap between confirmed rᵥ and baseline rᵥ
+// Luminance structure that fails the color confirmation test
+// High = Sobel finds structure that has no color backing = surrounds are engineered or synthetic
+function computeDeltaVoid(results) {
+    const confirmed = results.find(r => r.short === 'VTL×L−M');
+    const baseline  = results.find(r => r.short === 'Baseline');
+    if (!confirmed || !baseline) return 0;
+    return Math.max(0, confirmed.rv - baseline.rv);
+}
+
+// Β — blind spot mass with combined label
+// High Γ + High Β → corrective gradient (engineered color in luminance void)
+// Low Γ + High Β → genuine color work (real chromatic composition)
+// High Γ + Low Β → diffuse engineered atmosphere (biological activation without color mass)
+// Low Γ + Low Β → luminance dominant (VTL sees it all, color adds little)
 function computeBeta(results) {
     const blindSpot = results.find(r => r.short === 'Void/L−M');
     if (!blindSpot) return 0;
     return 1 - blindSpot.rv;
+}
+
+function betaReading(gamma, beta) {
+    const hiG = gamma > 0.20, hiB = beta > 0.15;
+    if (hiG && hiB)  return { label: 'corrective gradient',         color: '#ff8066' };
+    if (!hiG && hiB) return { label: 'genuine color work',          color: '#5dff91' };
+    if (hiG && !hiB) return { label: 'diffuse engineered field',    color: '#ffd45a' };
+    return                  { label: 'luminance dominant',          color: '#7c7cff' };
 }
 
 function scoreTag(val, lo, hi) {
@@ -888,10 +909,11 @@ function scoreTag(val, lo, hi) {
     return             { label: 'high', color: '#ff8066' };
 }
 
-function renderScorePanel(el, omega, gamma, beta) {
-    const oTag = scoreTag(omega, 0.10, 0.25);
-    const gTag = scoreTag(gamma, 0.20, 0.50);
-    const bTag = scoreTag(beta,  0.15, 0.35);
+function renderScorePanel(el, omega, gamma, deltaVoid, beta) {
+    const oTag  = scoreTag(omega,     0.10, 0.25);
+    const gTag  = scoreTag(gamma,     0.20, 0.50);
+    const dTag  = scoreTag(deltaVoid, 0.10, 0.40);
+    const bRead = betaReading(gamma, beta);
 
     const row = (symbol, name, val, tag, desc) =>
         `<div class="score-row">
@@ -902,12 +924,22 @@ function renderScorePanel(el, omega, gamma, beta) {
             <span class="score-desc">${desc}</span>
         </div>`;
 
+    const bRow = (symbol, name, val, read) =>
+        `<div class="score-row">
+            <span class="score-sym">${symbol}</span>
+            <span class="score-name">${name}</span>
+            <span class="score-val">${val.toFixed(3)}</span>
+            <span class="score-tag" style="color:${read.color}">${read.label}</span>
+            <span class="score-desc">color structure in luminance void — read against Γ</span>
+        </div>`;
+
     el.innerHTML =
         `<div class="score-panel">
             <div class="score-heading">integrity score</div>
-            ${row('Ω', 'mask agreement',    omega, oTag, 'mean centroid spread across all masks — low = structurally honest')}
-            ${row('Γ', 'gradient capture',  gamma, gTag, 'biological activation beyond confirmed structure — high = engineered field')}
-            ${row('Β', 'blind spot mass',   beta,  bTag, 'color structure VTL cannot see — context: high Γ + high Β = synthetic, low Γ + high Β = real color work')}
+            ${row('Ω', 'mask agreement',    omega,     oTag,  '9-mask independent centroid spread — low = structurally honest')}
+            ${row('Γ', 'gradient capture',  gamma,     gTag,  'biological activation beyond confirmed structure — high = engineered field')}
+            ${row('Δᵣ','delta void',        deltaVoid, dTag,  'luminance structure failing color confirmation — high = synthetic surround')}
+            ${bRow('Β','blind spot mass',   beta,      bRead)}
         </div>`;
 }
 
@@ -1026,10 +1058,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Integrity scores (no canvas — safe to render before visible)
-            const omega = computeOmega(results);
-            const gamma = computeGamma(results);
-            const beta  = computeBeta(results);
-            renderScorePanel(scorePanel, omega, gamma, beta);
+            const omega     = computeOmega(results);
+            const gamma     = computeGamma(results);
+            const deltaVoid = computeDeltaVoid(results);
+            const beta      = computeBeta(results);
+            renderScorePanel(scorePanel, omega, gamma, deltaVoid, beta);
 
             // Precompute kernel data before showing workspace
             const baselineMode  = results.find(r => r.short === 'Baseline');
