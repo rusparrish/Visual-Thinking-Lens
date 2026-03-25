@@ -1,17 +1,17 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --bg:         #08080b;
-    --surface:    #0f0f14;
-    --border:     #1c1c26;
-    --text:       #c4c4cc;
-    --muted:      #484858;
-    --vtl:        #7c7cff;
-    --cone:       #5dff91;
-    --opponent:   #ffd45a;
-    --deficiency: #ff8066;
-    --combined:   #c8a0ff;
-    --accent:     #00e5ff;
+    --bg:         #f8f8fb;
+    --surface:    #efeff4;
+    --border:     #dcdce8;
+    --text:       #1a1a2e;
+    --muted:      #7a7a8e;
+    --vtl:        #4444cc;
+    --cone:       #1a9944;
+    --opponent:   #9a7000;
+    --deficiency: #cc3322;
+    --combined:   #7733bb;
+    --accent:     #0077aa;
 }
 
 html, body {
@@ -30,14 +30,41 @@ header {
     border-bottom: 1px solid var(--border);
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
+    gap: 0.8rem;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.logo-link {
+    display: block;
+    flex-shrink: 0;
+    opacity: 0.85;
+    transition: opacity 0.15s;
+}
+
+.logo-link:hover { opacity: 1; }
+
+.site-logo {
+    height: 36px;
+    width: auto;
+    display: block;
+}
+
+.header-identity {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .wordmark {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.02em;
-    color: #ebebf5;
+    color: var(--text);
 }
 
 .wordmark .glyph { color: var(--accent); margin-right: 0.45rem; }
@@ -108,7 +135,7 @@ main { padding: 2rem 2.5rem; }
 #upload-zone .hint {
     font-size: 0.72rem;
     margin-top: 0.4rem;
-    color: #2a2a38;
+    color: var(--muted);
 }
 
 #file-input { display: none; }
@@ -214,7 +241,7 @@ hr.div {
     flex-wrap: wrap;
 }
 
-.mk { color: #282836; }
+.mk { color: var(--muted); }
 
 /* ── Integrity score panel ──────────────────────── */
 
@@ -358,8 +385,8 @@ hr.div {
     border-radius: 2px;
 }
 
-.kdef-base { background: #383848; }
-.kdef-conf { background: #c8a0ff; }
+.kdef-base { background: #b0b0c0; }
+.kdef-conf { background: #7733bb; }
 
 @media (max-width: 760px) {
     .kernel-wrap { grid-template-columns: 1fr; }
@@ -372,7 +399,7 @@ hr.div {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(8, 8, 11, 0.88);
+    background: rgba(248, 248, 251, 0.88);
     align-items: center;
     justify-content: center;
     z-index: 200;

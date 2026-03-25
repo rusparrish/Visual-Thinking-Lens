@@ -7,11 +7,11 @@
 const MAX_DIM = 480;
 
 const GROUP_HEX = {
-    vtl:        '#7c7cff',
-    cone:       '#5dff91',
-    opponent:   '#ffd45a',
-    deficiency: '#ff8066',
-    combined:   '#c8a0ff',
+    vtl:        '#4444cc',
+    cone:       '#1a9944',
+    opponent:   '#9a7000',
+    deficiency: '#cc3322',
+    combined:   '#7733bb',
 };
 
 // Matplotlib inferno, 10 stops
@@ -421,7 +421,7 @@ function renderPanel(canvas, imgData, field, W, H) {
     const py = (cy + 1) / 2 * (H - 1);
 
     // Line: center → centroid
-    ctx.strokeStyle = 'rgba(0,229,255,0.40)';
+    ctx.strokeStyle = 'rgba(0,119,170,0.35)';
     ctx.lineWidth   = 1;
     ctx.beginPath();
     ctx.moveTo(W / 2, H / 2);
@@ -429,14 +429,14 @@ function renderPanel(canvas, imgData, field, W, H) {
     ctx.stroke();
 
     // Center reference dot
-    ctx.fillStyle = 'rgba(255,255,255,0.30)';
+    ctx.fillStyle = 'rgba(0,0,0,0.20)';
     ctx.beginPath();
     ctx.arc(W / 2, H / 2, 2.5, 0, Math.PI * 2);
     ctx.fill();
 
     // Centroid crosshair
     const s = 7;
-    ctx.strokeStyle = '#00e5ff';
+    ctx.strokeStyle = '#0077aa';
     ctx.lineWidth   = 1.5;
     ctx.beginPath();
     ctx.moveTo(px - s, py); ctx.lineTo(px + s, py);
@@ -452,7 +452,7 @@ function renderScatter(canvas, modes) {
     const H = canvas.height;
     const ctx = canvas.getContext('2d');
 
-    ctx.fillStyle = '#0f0f14';
+    ctx.fillStyle = '#f8f8fb';
     ctx.fillRect(0, 0, W, H);
 
     const PAD = 44, RANGE = 0.65;
@@ -462,7 +462,7 @@ function renderScatter(canvas, modes) {
     const ty = dy => PAD + (dy + RANGE) / (2 * RANGE) * CH;
 
     // Grid
-    ctx.strokeStyle = '#1c1c26';
+    ctx.strokeStyle = '#dcdce8';
     ctx.lineWidth = 1;
     for (const v of [-0.5, -0.25, 0, 0.25, 0.5]) {
         ctx.beginPath();
@@ -471,15 +471,15 @@ function renderScatter(canvas, modes) {
         ctx.stroke();
     }
 
-    // Zero axes (slightly brighter)
-    ctx.strokeStyle = '#2c2c3e';
+    // Zero axes (slightly darker)
+    ctx.strokeStyle = '#b8b8cc';
     ctx.beginPath();
     ctx.moveTo(tx(0), PAD); ctx.lineTo(tx(0), PAD + CH);
     ctx.moveTo(PAD, ty(0)); ctx.lineTo(PAD + CW, ty(0));
     ctx.stroke();
 
     // Axis labels
-    ctx.fillStyle = '#2e2e44';
+    ctx.fillStyle = '#7a7a8e';
     ctx.font      = '10px monospace';
     ctx.textAlign = 'center';
     ctx.fillText('← left  ·  Δx  ·  right →', W / 2, PAD - 16);
@@ -490,7 +490,7 @@ function renderScatter(canvas, modes) {
     ctx.restore();
 
     // Tick labels
-    ctx.fillStyle = '#2e2e44';
+    ctx.fillStyle = '#7a7a8e';
     ctx.font      = '9px monospace';
     for (const v of [-0.5, 0, 0.5]) {
         ctx.textAlign = 'center';
@@ -507,7 +507,7 @@ function renderScatter(canvas, modes) {
 
         // Glow
         const grad = ctx.createRadialGradient(x, y, 0, x, y, 12);
-        grad.addColorStop(0, col + '40');
+        grad.addColorStop(0, col + '30');
         grad.addColorStop(1, col + '00');
         ctx.fillStyle = grad;
         ctx.beginPath(); ctx.arc(x, y, 12, 0, Math.PI * 2); ctx.fill();
@@ -524,7 +524,7 @@ function renderScatter(canvas, modes) {
     }
 
     // Center reference
-    ctx.strokeStyle = 'rgba(255,255,255,0.18)';
+    ctx.strokeStyle = 'rgba(0,0,0,0.18)';
     ctx.lineWidth = 1;
     ctx.beginPath(); ctx.arc(tx(0), ty(0), 3, 0, Math.PI * 2); ctx.stroke();
 }
@@ -752,19 +752,19 @@ function renderKernelChart(canvas, baseK, confK) {
     canvas.height = H;
     const ctx = canvas.getContext('2d');
 
-    ctx.fillStyle = '#0f0f14';
+    ctx.fillStyle = '#f8f8fb';
     ctx.fillRect(0, 0, W, H);
 
     const BAR_W = W - PAD_L - PAD_R;
 
     // Heading
-    ctx.fillStyle = '#484858';
+    ctx.fillStyle = '#1a1a2e';
     ctx.font = '10px monospace';
     ctx.textAlign = 'left';
     ctx.fillText('KERNEL', PAD_L, 18);
-    ctx.fillStyle = '#282836';
+    ctx.fillStyle = '#b0b0c0';
     ctx.fillText('baseline', W - PAD_R + 4, 18);
-    ctx.fillStyle = '#c8a0ff';
+    ctx.fillStyle = '#7733bb';
     ctx.fillText('confirmed', W - PAD_R + 52, 18);
 
     KERNEL_ROWS.forEach((row, ri) => {
@@ -783,7 +783,7 @@ function renderKernelChart(canvas, baseK, confK) {
         const zeroX = toX(0);
 
         // Subtle row separator
-        ctx.strokeStyle = '#1c1c26';
+        ctx.strokeStyle = '#dcdce8';
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(PAD_L, baseY); ctx.lineTo(W - PAD_R, baseY);
@@ -791,7 +791,7 @@ function renderKernelChart(canvas, baseK, confK) {
 
         // Zero axis (for centred metrics)
         if (row.center) {
-            ctx.strokeStyle = '#2c2c3e';
+            ctx.strokeStyle = '#b8b8cc';
             ctx.lineWidth = 1;
             ctx.setLineDash([2, 3]);
             ctx.beginPath();
@@ -802,7 +802,7 @@ function renderKernelChart(canvas, baseK, confK) {
 
         // Baseline bar
         const bValX = toX(baseK[row.key]);
-        ctx.fillStyle = '#383848';
+        ctx.fillStyle = '#b0b0c0';
         if (row.center) {
             const x0 = Math.min(zeroX, bValX);
             ctx.fillRect(x0, barBaseY, Math.abs(bValX - zeroX), BAR_H);
@@ -812,7 +812,7 @@ function renderKernelChart(canvas, baseK, confK) {
 
         // Confirmed bar
         const cValX = toX(confK[row.key]);
-        ctx.fillStyle = '#c8a0ff';
+        ctx.fillStyle = '#7733bb';
         if (row.center) {
             const x0 = Math.min(zeroX, cValX);
             ctx.fillRect(x0, barConfY, Math.abs(cValX - zeroX), BAR_H);
@@ -821,7 +821,7 @@ function renderKernelChart(canvas, baseK, confK) {
         }
 
         // Label left
-        ctx.fillStyle = '#484858';
+        ctx.fillStyle = '#555566';
         ctx.font = '11px monospace';
         ctx.textAlign = 'right';
         ctx.fillText(row.label, PAD_L - 8, midY + 4);
@@ -835,9 +835,9 @@ function renderKernelChart(canvas, baseK, confK) {
         const cDisp = row.key === 'rho'
             ? confK[row.key].toFixed(1)
             : (confK[row.key] >= 0 ? '+' : '') + confK[row.key].toFixed(3);
-        ctx.fillStyle = '#383848';
+        ctx.fillStyle = '#b0b0c0';
         ctx.fillText(bDisp, W - PAD_R + 4, barBaseY + BAR_H - 1);
-        ctx.fillStyle = '#c8a0ff';
+        ctx.fillStyle = '#7733bb';
         ctx.fillText(cDisp, W - PAD_R + 4, barConfY + BAR_H - 1);
     });
 }
@@ -897,16 +897,16 @@ function computeBeta(results) {
 
 function betaReading(gamma, beta) {
     const hiG = gamma > 0.20, hiB = beta > 0.15;
-    if (hiG && hiB)  return { label: 'gradient heavy',              color: '#ff8066' };
-    if (!hiG && hiB) return { label: 'genuine color work',          color: '#5dff91' };
-    if (hiG && !hiB) return { label: 'diffuse activation',          color: '#ffd45a' };
-    return                  { label: 'luminance dominant',          color: '#7c7cff' };
+    if (hiG && hiB)  return { label: 'gradient heavy',              color: '#cc3322' };
+    if (!hiG && hiB) return { label: 'genuine color work',          color: '#1a9944' };
+    if (hiG && !hiB) return { label: 'diffuse activation',          color: '#9a7000' };
+    return                  { label: 'luminance dominant',          color: '#4444cc' };
 }
 
 function scoreTag(val, lo, hi) {
-    if (val < lo)  return { label: 'low',  color: '#5dff91' };
-    if (val < hi)  return { label: 'mid',  color: '#ffd45a' };
-    return             { label: 'high', color: '#ff8066' };
+    if (val < lo)  return { label: 'low',  color: '#1a9944' };
+    if (val < hi)  return { label: 'mid',  color: '#9a7000' };
+    return             { label: 'high', color: '#cc3322' };
 }
 
 function renderScorePanel(el, omega, gamma, deltaVoid, beta) {
