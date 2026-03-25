@@ -67,6 +67,32 @@
 
         <hr class="div">
 
+        <div id="score-panel"></div>
+
+        <div class="kernel-wrap">
+            <div class="kernel-chart">
+                <canvas id="kernel-canvas"></canvas>
+            </div>
+            <div class="kernel-defs">
+                <div class="score-heading">primitive definitions</div>
+                <dl class="kdef-list">
+                    <dt>Δx</dt><dd>Horizontal centroid offset. Where the gradient mass sits left or right of frame center. Negative is left.</dd>
+                    <dt>Δy</dt><dd>Vertical centroid offset. Where the gradient mass sits above or below frame center. Negative is up.</dd>
+                    <dt>rᵥ</dt><dd>Void ratio. Fraction of the image with near-zero gradient response. High rᵥ means most of the frame is empty — only a small region carries structure.</dd>
+                    <dt>μ</dt><dd>Cohesion. Fraction of total gradient energy concentrated in the top-quartile pixels. High μ means the mass is tight. Low μ means it is scattered thin.</dd>
+                    <dt>SDI</dt><dd>Spatial Dispersion Index. Mean distance of mass pixels from the centroid, normalized by the image diagonal. Low is a center blob. High is edge-weighted spread. Detects collapse into center monoculture even when rᵥ and μ look stable.</dd>
+                    <dt>ρᵣ</dt><dd>Packing density. Mass area relative to convex hull area, ×100. How tightly the active marks are compressed within their envelope. Low means marks are sparse inside their bounding shape.</dd>
+                    <dt>xₚ</dt><dd>Peripheral edge pull. Fraction of gradient energy in the outer 15% band of the frame. High means mass lives at the edges. Low means centripetal collapse.</dd>
+                    <dt>θ</dt><dd>Orientation stability. One minus the Shannon entropy of the 8-bin gradient orientation histogram, weighted by magnitude. High means edges are directionally consistent. Low means omnidirectional noise.</dd>
+                    <dt>dₛ</dt><dd>Structural thickness. Mean ridge width at active pixels, normalized by the shorter image dimension. Thin edges score low. Broad masses score high.</dd>
+                </dl>
+                <div class="kdef-legend">
+                    <span class="kdef-swatch kdef-base"></span><span>baseline (Sobel / LAB-L)</span>
+                    <span class="kdef-swatch kdef-conf"></span><span>confirmed (VTL × L−M)</span>
+                </div>
+            </div>
+        </div>
+
         <div id="grid" class="grid"></div>
 
     </div>

@@ -216,6 +216,143 @@ hr.div {
 
 .mk { color: #282836; }
 
+/* ── Integrity score panel ──────────────────────── */
+
+.score-panel {
+    margin: 0 0 2.5rem;
+    padding: 1.4rem 1.8rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.score-heading {
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.1rem;
+}
+
+.score-row {
+    display: grid;
+    grid-template-columns: 1.4rem 9rem 3.8rem 2.8rem 1fr;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.score-row:last-child { border-bottom: none; }
+
+.score-sym {
+    font-size: 1rem;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.score-name {
+    color: var(--text);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+}
+
+.score-val {
+    font-size: 0.82rem;
+    color: var(--text);
+    text-align: right;
+}
+
+.score-tag {
+    font-size: 0.67rem;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.score-desc {
+    font-size: 0.63rem;
+    color: var(--muted);
+    line-height: 1.4;
+}
+
+/* ── Kernel chart ───────────────────────────────── */
+
+.kernel-wrap {
+    margin: 0 0 2.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 62% 38%;
+}
+
+.kernel-chart {
+    border-right: 1px solid var(--border);
+}
+
+.kernel-chart canvas {
+    display: block;
+    width: 100%;
+}
+
+.kernel-defs {
+    padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.kdef-list {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 0.18rem 0.7rem;
+    align-items: baseline;
+    flex: 1;
+}
+
+.kdef-list dt {
+    font-size: 0.78rem;
+    color: var(--accent);
+    text-align: right;
+    padding-top: 0.28rem;
+    font-style: normal;
+}
+
+.kdef-list dd {
+    font-size: 0.62rem;
+    color: var(--muted);
+    line-height: 1.45;
+    padding-top: 0.28rem;
+    border-top: 1px solid var(--border);
+}
+
+.kdef-legend {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.60rem;
+    color: var(--muted);
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.kdef-swatch {
+    display: inline-block;
+    width: 18px;
+    height: 7px;
+    border-radius: 2px;
+}
+
+.kdef-base { background: #383848; }
+.kdef-conf { background: #c8a0ff; }
+
+@media (max-width: 760px) {
+    .kernel-wrap { grid-template-columns: 1fr; }
+    .kernel-chart { border-right: none; border-bottom: 1px solid var(--border); }
+}
+
 /* ── Processing overlay ─────────────────────────── */
 
 #processing {
