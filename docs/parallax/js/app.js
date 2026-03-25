@@ -368,7 +368,7 @@ function buildModes(R, G, B, W, H) {
             field:   fieldMul(baseline, dog(fieldSub(Lr, Mr), W, H)),
             group:   'combined',
             section: 'combined masks',
-            note:    'Where luminance edge and color opponency agree — filters synthetic mass',
+            note:    'Where luminance edge and color opponency agree — double-confirmed structure only',
         },
         {
             name:  'Cone max  biological ceiling',
@@ -843,12 +843,12 @@ function renderKernelChart(canvas, baseK, confK) {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// INTEGRITY SCORING  Ω · Γ · Δᵣ · Β
+// MASK COHERENCE  Ω · Γ · Δᵣ · Β
 // ═══════════════════════════════════════════════════════════════════
 
 // Ω — mask agreement: mean pairwise centroid distance across 9 independent masks
 // Excludes combined masks (derived from others, not independent observations)
-// Low = all masks agree, composition is structurally honest
+// Low = masks converge
 // High = masks pull in different directions, something was placed not found
 function computeOmega(results) {
     const independent = results.filter(r => r.group !== 'combined');
@@ -866,7 +866,7 @@ function computeOmega(results) {
 
 // Γ — gradient capture: gap between confirmed structure and biological activation
 // High = biological field activated far beyond where real structure exists
-// Signature of engineered gradients (AI correction or synthetic atmosphere)
+// High = biological field activated beyond confirmed structural boundary
 function computeGamma(results) {
     const confirmed = results.find(r => r.short === 'VTL×L−M');
     const coneMax   = results.find(r => r.short === 'Cone max');
@@ -876,7 +876,7 @@ function computeGamma(results) {
 
 // Δᵣ — delta void: gap between confirmed rᵥ and baseline rᵥ
 // Luminance structure that fails the color confirmation test
-// High = Sobel finds structure that has no color backing = surrounds are engineered or synthetic
+// High = Sobel finds structure that has no color backing
 function computeDeltaVoid(results) {
     const confirmed = results.find(r => r.short === 'VTL×L−M');
     const baseline  = results.find(r => r.short === 'Baseline');
@@ -885,10 +885,10 @@ function computeDeltaVoid(results) {
 }
 
 // Β — blind spot mass with combined label
-// High Γ + High Β → corrective gradient (engineered color in luminance void)
-// Low Γ + High Β → genuine color work (real chromatic composition)
-// High Γ + Low Β → diffuse engineered atmosphere (biological activation without color mass)
-// Low Γ + Low Β → luminance dominant (VTL sees it all, color adds little)
+// High Γ + High Β → gradient heavy
+// Low Γ + High Β → genuine color work
+// High Γ + Low Β → diffuse activation
+// Low Γ + Low Β → luminance dominant
 function computeBeta(results) {
     const blindSpot = results.find(r => r.short === 'Void/L−M');
     if (!blindSpot) return 0;
@@ -897,9 +897,9 @@ function computeBeta(results) {
 
 function betaReading(gamma, beta) {
     const hiG = gamma > 0.20, hiB = beta > 0.15;
-    if (hiG && hiB)  return { label: 'corrective gradient',         color: '#ff8066' };
+    if (hiG && hiB)  return { label: 'gradient heavy',              color: '#ff8066' };
     if (!hiG && hiB) return { label: 'genuine color work',          color: '#5dff91' };
-    if (hiG && !hiB) return { label: 'diffuse engineered field',    color: '#ffd45a' };
+    if (hiG && !hiB) return { label: 'diffuse activation',          color: '#ffd45a' };
     return                  { label: 'luminance dominant',          color: '#7c7cff' };
 }
 
@@ -930,15 +930,16 @@ function renderScorePanel(el, omega, gamma, deltaVoid, beta) {
             <span class="score-name">${name}</span>
             <span class="score-val">${val.toFixed(3)}</span>
             <span class="score-tag" style="color:${read.color}">${read.label}</span>
-            <span class="score-desc">color structure in luminance void — read against Γ</span>
+            <span class="score-desc">color structure in luminance void</span>
         </div>`;
 
     el.innerHTML =
         `<div class="score-panel">
-            <div class="score-heading">integrity score</div>
-            ${row('Ω', 'mask agreement',    omega,     oTag,  '9-mask independent centroid spread — low = structurally honest')}
-            ${row('Γ', 'gradient capture',  gamma,     gTag,  'biological activation beyond confirmed structure — high = engineered field')}
-            ${row('Δᵣ','delta void',        deltaVoid, dTag,  'luminance structure failing color confirmation — high = synthetic surround')}
+            <div class="score-heading">mask coherence</div>
+            <div class="score-framing">How does this image's structure survive cross-examination? Failure ≠ collapse — it might be compositional choice or it might be performance.</div>
+            ${row('Ω', 'mask agreement',    omega,     oTag,  '9-mask independent centroid spread — low = masks converge')}
+            ${row('Γ', 'gradient capture',  gamma,     gTag,  'biological activation beyond confirmed structure boundary')}
+            ${row('Δᵣ','delta void',        deltaVoid, dTag,  'luminance structure without color backing')}
             ${bRow('Β','blind spot mass',   beta,      bRead)}
         </div>`;
 }

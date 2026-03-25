@@ -234,6 +234,15 @@ hr.div {
     margin-bottom: 1.1rem;
 }
 
+.score-framing {
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    opacity: 0.75;
+}
+
 .score-row {
     display: grid;
     grid-template-columns: 1.4rem 9rem 3.8rem 11rem 1fr;
