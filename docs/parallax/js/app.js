@@ -303,6 +303,7 @@ function buildModes(R, G, B, W, H) {
             field: baseline,
             group: 'vtl',
             note:  'Current system: luminance gradients only',
+            desc:  'Brightness edges only. The baseline everything else is measured against. Sees object boundaries and luminance contrast but is blind to color.',
         },
         {
             name:  'L cone  560 nm',
@@ -310,6 +311,7 @@ function buildModes(R, G, B, W, H) {
             field: dog(Ln, W, H),
             group: 'cone',
             note:  'Long-wavelength (red) cone response',
+            desc:  'Your eye\'s red-sensitive receptor. Picks up warm color structure and red-channel contrast that the baseline never sees.',
         },
         {
             name:  'M cone  530 nm',
@@ -317,6 +319,7 @@ function buildModes(R, G, B, W, H) {
             field: dog(Mn, W, H),
             group: 'cone',
             note:  'Medium-wavelength (green) cone response',
+            desc:  'Your eye\'s green-sensitive receptor. Close to L cone but shifted — the gap between them is what drives red-green color vision.',
         },
         {
             name:  'S cone  419 nm',
@@ -324,6 +327,7 @@ function buildModes(R, G, B, W, H) {
             field: dog(Sn, W, H),
             group: 'cone',
             note:  'Short-wavelength (blue) cone response',
+            desc:  'Your eye\'s blue-sensitive receptor. Quiet in warm-toned images. When it fires, it\'s finding cool light or blue color structure the other channels missed.',
         },
         {
             name:  'L − M  red-green',
@@ -331,6 +335,7 @@ function buildModes(R, G, B, W, H) {
             field: dog(fieldSub(Lr, Mr), W, H),
             group: 'opponent',
             note:  'Red-green color opponency channel',
+            desc:  'The brain\'s red-green channel, computed from the difference between L and M cones. Finds color contrast with no luminance edge — color doing compositional work invisibly.',
         },
         {
             name:  'L+M − 2S  yellow-blue',
@@ -338,6 +343,7 @@ function buildModes(R, G, B, W, H) {
             field: dog(yellowBlue(Lr, Mr, Sr), W, H),
             group: 'opponent',
             note:  'Yellow-blue color opponency channel',
+            desc:  'The brain\'s warm-cool channel. Responds to the relationship between warm and cool tones across the frame. Often reveals engineered atmosphere.',
         },
         {
             name:  'Protanopia  (no L)',
@@ -345,6 +351,7 @@ function buildModes(R, G, B, W, H) {
             field: dog(fieldAvg2(Mr, Sr), W, H),
             group: 'deficiency',
             note:  'Missing long-wavelength cone — red-green confusion',
+            desc:  'Simulates missing red sensitivity. Shows what structure survives when red-green distinction is gone.',
         },
         {
             name:  'Deuteranopia  (no M)',
@@ -352,6 +359,7 @@ function buildModes(R, G, B, W, H) {
             field: dog(fieldAvg2(Lr, Sr), W, H),
             group: 'deficiency',
             note:  'Missing medium-wavelength cone — most common deficiency',
+            desc:  'Simulates missing green sensitivity — the most common form of color blindness. A well-composed image holds together here.',
         },
         {
             name:  'Tritanopia  (no S)',
@@ -359,6 +367,7 @@ function buildModes(R, G, B, W, H) {
             field: dog(fieldAvg2(Lr, Mr), W, H),
             group: 'deficiency',
             note:  'Missing short-wavelength cone — blue-yellow confusion',
+            desc:  'Simulates missing blue sensitivity. Rare. Shows how much the image depends on blue-yellow contrast for its structure.',
         },
 
         // ── Combined masks ───────────────────────────────────────────
@@ -369,6 +378,7 @@ function buildModes(R, G, B, W, H) {
             group:   'combined',
             section: 'combined masks',
             note:    'Where luminance edge and color opponency agree — double-confirmed structure only',
+            desc:    'Only what both brightness edges and color opponency agree on. The strictest test. If it passes here, it is load-bearing.',
         },
         {
             name:  'Cone max  biological ceiling',
@@ -376,6 +386,7 @@ function buildModes(R, G, B, W, H) {
             field: fieldMax3(dog(Ln, W, H), dog(Mn, W, H), dog(Sn, W, H)),
             group: 'combined',
             note:  'Widest reading any single cone channel gives — most biologically sensitive',
+            desc:  'The widest view the biological visual system gives — the maximum any single cone responds to. Most sensitive to gradients and atmosphere.',
         },
         {
             name:  'L−M in VTL void  blind spot',
@@ -383,6 +394,7 @@ function buildModes(R, G, B, W, H) {
             field: fieldVoidGate(dog(fieldSub(Lr, Mr), W, H), baseline),
             group: 'combined',
             note:  'Color opponency only where Sobel sees nothing — what VTL structurally ignores',
+            desc:  'Color contrast in regions the baseline sees as empty. What VTL structurally cannot find. In real images this is often genuine color composition.',
         },
     ];
 }
@@ -1035,6 +1047,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 nameEl.textContent = mode.name;
                 nameEl.title = mode.note;
 
+                const descEl = document.createElement('div');
+                descEl.className = 'panel-desc';
+                descEl.textContent = mode.desc || '';
+
                 const cvs = document.createElement('canvas');
 
                 const metricsEl = document.createElement('div');
@@ -1051,6 +1067,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     `<span><span class="mk">rᵥ </span>${rv.toFixed(2)}</span>`;
 
                 panelEl.appendChild(nameEl);
+                panelEl.appendChild(descEl);
                 panelEl.appendChild(cvs);
                 panelEl.appendChild(metricsEl);
                 grid.appendChild(panelEl);

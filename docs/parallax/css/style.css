@@ -234,6 +234,14 @@ hr.div {
 .panel-name.deficiency { color: var(--deficiency); }
 .panel-name.combined   { color: var(--combined); }
 
+.panel-desc {
+    font-size: 0.71rem;
+    color: var(--muted);
+    line-height: 1.45;
+    margin: 0.25rem 0 0.5rem;
+    opacity: 0.8;
+}
+
 .panel canvas {
     width: 100%;
     display: block;
