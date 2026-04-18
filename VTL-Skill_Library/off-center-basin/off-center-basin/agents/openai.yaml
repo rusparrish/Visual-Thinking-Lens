@@ -1,0 +1,4 @@
+interface:
+  display_name: "Off-Center Basin"
+  short_description: "Build coherent off-center compositions"
+  default_prompt: "Use $off-center-basin to move this prompt away from centered composition while keeping the image structurally coherent."
