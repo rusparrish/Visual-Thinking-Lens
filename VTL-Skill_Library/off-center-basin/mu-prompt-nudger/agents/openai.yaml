@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mu Prompt Nudger"
+  short_description: "Rewrite prompts with one-step μ corrections."
+  default_prompt: "Use $mu-prompt-nudger to revise this image prompt with precise μ nudges that escape center default while preserving fidelity."
