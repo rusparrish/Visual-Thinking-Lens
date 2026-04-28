@@ -1,0 +1,4 @@
+interface:
+  display_name: "Center-Fill Default Diagnostic"
+  short_description: "Detect AI center-fill defaults."
+  default_prompt: "Use center-fill-default-diagnostic to diagnose centered salience, blob-plus-margins, comfortable void, additive packing, regular cadence, safe polish, and minimal anti-default correction moves in generated images or prompt-output sequences."
