@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Spec Builder"
+  short_description: "Compile intent into visual specs"
+  default_prompt: "Use $visual-spec-builder to turn this image idea into anchors, constraints, negatives, view instructions, and acceptance checks."
