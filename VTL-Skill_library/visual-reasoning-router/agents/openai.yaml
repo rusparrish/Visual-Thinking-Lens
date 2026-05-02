@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Reasoning Router"
+  short_description: "Choose the right visual reasoning skill"
+  default_prompt: "Use $visual-reasoning-router to choose which visual reasoning skill should handle this request."
