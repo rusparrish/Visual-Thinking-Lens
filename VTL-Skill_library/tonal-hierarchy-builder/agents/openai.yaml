@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tonal Hierarchy Builder"
+  short_description: "Build and diagnose tonal structure before expressive markmaking."
+  default_prompt: "Use tonal-hierarchy-builder to evaluate whether this image or prompt has enough tonal hierarchy to support expressive markmaking. Identify the value backbone, figure/field/focus priorities, suppression zones, and next repair moves."
