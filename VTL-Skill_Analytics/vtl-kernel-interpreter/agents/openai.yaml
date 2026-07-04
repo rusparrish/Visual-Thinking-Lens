@@ -1,0 +1,4 @@
+interface:
+  display_name: "VTL Kernel Interpreter"
+  short_description: "Interpret VTL kernel metric vectors"
+  default_prompt: "Use $vtl-kernel-interpreter to interpret current VTL kernel metrics as structural coordinates with QA and claim boundaries."

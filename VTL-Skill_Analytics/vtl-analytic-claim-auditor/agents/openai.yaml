@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analytic Claim Auditor"
+  short_description: "Audit analytic claims for evidence, scope, and metric boundaries"
+  default_prompt: "Use $analytic-claim-auditor to review a report, caption, interpretation, or methods claim against the Playground Analytic stack and flag overclaims, metric-to-quality leaps, missing comparability, vocabulary drift, and evidence gaps."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "RCP Classifier"
+  short_description: "Classify radial collapse prior"
+  default_prompt: "Use $rcp-classifier to classify this image or batch for Radial Collapse Prior hits, severity, and first-pass route."

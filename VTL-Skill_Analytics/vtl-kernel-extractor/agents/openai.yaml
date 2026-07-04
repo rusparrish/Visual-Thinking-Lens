@@ -1,0 +1,4 @@
+interface:
+  display_name: "VTL Kernel Extractor"
+  short_description: "Extract canonical VTL kernel metrics"
+  default_prompt: "Use $vtl-kernel-extractor to run images through the canonical VTL kernel extractor and return metrics, r_v field package, and QA artifacts."

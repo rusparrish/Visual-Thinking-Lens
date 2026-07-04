@@ -1,0 +1,4 @@
+interface:
+  display_name: "VCLI-G Interpreter"
+  short_description: "Interpret VCLI-G geometry load readings"
+  default_prompt: "Use $vcli-g-interpreter to interpret this VCLI-G readout and explain the structural demand."
