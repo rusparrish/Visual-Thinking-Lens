@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ghost Density Basin"
+  short_description: "Build haunted off-center image basins"
+  default_prompt: "Use $ghost-density-basin to move this prompt into the Ghost Density basin: off-center mass, weighted void, fractured surfaces, and unresolved traces."
