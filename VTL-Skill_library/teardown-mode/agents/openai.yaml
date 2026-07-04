@@ -1,0 +1,4 @@
+interface:
+  display_name: "Teardown Mode"
+  short_description: "Pressure-test prompts and images"
+  default_prompt: "Use $teardown-mode to pressure-test this prompt or image through base, probe, yield, collapse echo, and suspended opposition."
