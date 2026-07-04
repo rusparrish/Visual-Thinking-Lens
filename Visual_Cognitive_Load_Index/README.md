@@ -169,10 +169,9 @@ THE SOFTWARE.
 ```
 
 **Authorship**  
-This framework was architected by **Russell Parrish** and recursively co‑developed inside GPT, Gemini, and Claude. Every critique is human‑led; every recursion is model‑driven. The result: a reasoning layer authored through language, not image manipulation.
 
 *Provenance: A.rtist I.nfluencer • Visual Thinking Lens (OS)
-Learn more --> www.artistinfluencer.com
+Learn more --> www.artistinfluencer.com www.parallaxmetrology.com
 
 ---
 
