@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mark Stratification Diagnostic"
+  short_description: "Find uniform or structurally varied marks."
+  default_prompt: "Use mark-stratification-diagnostic to evaluate whether this image or prompt has material-specific mark logic, varied stroke roles, and surface resistance rather than a uniform texture pass."
